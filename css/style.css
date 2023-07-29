@@ -1,3 +1,5 @@
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 /* common css */
 * {
   margin: 0;
@@ -14,11 +16,73 @@ li {
 }
 
 /* variable */
-/* $main-color: #;
-$sub-color: #;
-$kr-font: ;
-$en-font: ; */
-.section h1 {
+/* header */
+header {
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  transition: all 0.4s;
+}
+header .logo-area {
+  color: #2D313D;
+  font-family: "Montserrat", sans-serif;
+  font-size: 68px;
+  font-weight: 900;
+  letter-spacing: -0.08px;
+  transition: all 0.4s;
+}
+
+#wrap #fullpage {
+  /* intro */
+  /* about */
+}
+#wrap #fullpage .section.intro .fp-tableCell {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+#wrap #fullpage .section.intro .fp-tableCell .bg-area {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#wrap #fullpage .section.intro .fp-tableCell .bg-area img {
+  width: 100%;
+}
+#wrap #fullpage .section.about .fp-tableCell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #C8F3FA;
+}
+#wrap #fullpage .section.about .fp-tableCell .bg-area {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+#wrap #fullpage .section.about .fp-tableCell .bg-area img {
+  width: 100%;
+}
+#wrap #fullpage .section.about .fp-tableCell .container {
+  position: relative;
+  z-index: 2;
+  border: 1px solid red;
+  width: 1560px;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;

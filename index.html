@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/jquery.fullPage.css">
     <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet">
     <!-- js, swiper8.4.7 -->
     <script src="./js/jquery-3.7.0.min.js" defer></script>
     <script src="./js/swiper-bundle.min.js" defer></script>
@@ -16,18 +17,42 @@
     <script src="./js/main.js" defer></script>
 </head>
 <body>
-    <div id="fullpage">
-        <div class="section">
-            <h1>slide 1</h1>
+    <header>
+        <div class="logo-area">
+            SIK
         </div>
-        <div class="section">
-            <h1>slide 2</h1>
-        </div>
-        <div class="section">
-            <h1>slide 3</h1>
-        </div>
-        <div class="section">
-            <h1>slide 4</h1>
+    </header>
+    <div id="wrap">
+        <div id="fullpage">
+
+            <!-- section.intro -->
+            <div class="section intro">
+                <!-- intro bg -->
+                <div class="bg-area">
+                    <img src="./img/intro-bg.png" alt="background image">
+                </div>
+            </div>
+
+            <!-- section.about -->
+            <div class="section about">
+                <!-- about bg -->
+                <div class="bg-area">
+                    <img src="./img/about-bg.svg" alt="background image">
+                </div>
+                <!-- about container -->
+                <div class="container">
+                    <h2>ABOUT</h2>
+                </div>
+            </div>
+
+            <div class="section">
+                <h1>slide 3</h1>
+            </div>
+
+            <div class="section">
+                <h1>slide 4</h1>
+            </div>
+
         </div>
     </div>
 </body>
