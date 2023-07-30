@@ -10,14 +10,16 @@ $(()=>{
     'afterLoad': function (anchorLink, index) {
 			if (index !== 1){
 				$('header').css({
-          height: '89px',
+          top: '0px',
+          transform: 'translateY(0%)',
         });
         $('header > .logo-area').css({
-          fontSize: '40px', 
+          fontSize: '40px',
         });
 			}else{
         $('header').css({
-          height: '100vh',
+          top: '50%',
+          transform: 'translateY(-50%)',
         });
         $('header > .logo-area').css({
           fontSize: '68px',
