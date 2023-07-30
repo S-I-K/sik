@@ -41,6 +41,9 @@ $(()=>{
 
 /**************** javascript ****************/
 var swiper = new Swiper("#time-weather-slider", {
+    autoplay: {
+      delay: 6000,
+    },
     pagination: {
       el: ".swiper-pagination",
     },
