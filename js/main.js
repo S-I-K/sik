@@ -43,11 +43,18 @@ $(()=>{
 
 /**************** javascript ****************/
 var swiper = new Swiper("#time-weather-slider", {
-    autoplay: {
-      delay: 6000,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-    },
-    direction: 'vertical',
+  direction: 'vertical',
+  autoplay: {
+    delay: 6000,
+  },
+  pagination: {
+    el: ".swiper-pagination.time-weather-pagination",
+  },
+});
+
+var swiper = new Swiper("#info-slider", {
+  navigation: {
+    nextEl: ".swiper-button-next.info-pagination",
+    prevEl: ".swiper-button-prev.info-pagination",
+  },
 });
