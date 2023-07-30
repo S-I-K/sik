@@ -1,15 +1,14 @@
 console.log(' 2023.07.11 ');
 
-/* jquery */
+/**************** jquery ****************/
 $(()=>{
   /* fullpage.js */
   $('#fullpage').fullpage({
-
     autoScrolling:true,
 		scrollHorizontally: true,
     navigation: true,
     'afterLoad': function (anchorLink, index) {
-			if (index == 2){
+			if (index !== 1){
 				$('header').css({
           height: '89px',
         });
@@ -25,12 +24,25 @@ $(()=>{
         });
       }
 		},
-
 	});
+
+  /* real timer */
+  let timer = $('#timer');
+  function getTime() {
+    const date = new Date();
+    const hours = String(date.getHours()).padStart(2, '0');
+    const min = String(date.getMinutes()).padStart(2, '0');
+    const sec = String(date.getSeconds()).padStart(2, '0');
+    timer.text(`${hours}:${min}:${sec}`);
+  }
+  getTime();
+  setInterval(getTime, 1000);
 });
 
-var swiper = new Swiper(".mySwiper", {
+/**************** javascript ****************/
+var swiper = new Swiper("#time-weather-slider", {
     pagination: {
       el: ".swiper-pagination",
     },
+    direction: 'vertical',
 });

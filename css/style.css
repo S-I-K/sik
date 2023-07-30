@@ -9,10 +9,19 @@
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 li {
   list-style: none;
+}
+
+.box-sh {
+  filter: drop-shadow(0px 2px 12px rgba(0, 0, 0, 0.12));
+}
+
+.bg-area {
+  pointer-events: none;
 }
 
 /* variable */
@@ -39,19 +48,19 @@ header .logo-area {
 }
 
 #wrap #fullpage {
-  /* intro */
-  /* about */
+  /************** intro **************/
+  /************** about **************/
 }
 #wrap #fullpage .section.intro .fp-tableCell {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
 }
 #wrap #fullpage .section.intro .fp-tableCell .bg-area {
   width: 100%;
   height: 100%;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -70,6 +79,7 @@ header .logo-area {
   position: absolute;
   width: 100%;
   height: 100%;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -80,10 +90,195 @@ header .logo-area {
 #wrap #fullpage .section.about .fp-tableCell .container {
   position: relative;
   z-index: 2;
-  border: 1px solid red;
   width: 1560px;
   height: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  /* about-top-area */
+  /* about-bottom-area */
+}
+#wrap #fullpage .section.about .fp-tableCell .container .about-top-area {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  height: 478px;
+  border: 1px solid red;
+  margin-bottom: 20px;
+}
+#wrap #fullpage .section.about .fp-tableCell .container .about-top-area .left {
+  width: 507px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+#wrap #fullpage .section.about .fp-tableCell .container .about-top-area .left .img-box {
+  width: 100%;
+  height: 280px;
+  border-radius: 30px;
+  overflow: hidden;
+  position: relative;
+}
+#wrap #fullpage .section.about .fp-tableCell .container .about-top-area .left .img-box img {
+  width: 100%;
+  position: absolute;
+  bottom: -60px;
+  pointer-events: none;
+}
+#wrap #fullpage .section.about .fp-tableCell .container .about-top-area .left .sns-box {
+  width: 100%;
+  height: 178px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: #fff;
+  border-radius: 30px;
+}
+#wrap #fullpage .section.about .fp-tableCell .container .about-top-area .left .sns-box .bg-area {
+  align-items: flex-end;
+  opacity: 0.3;
+}
+#wrap #fullpage .section.about .fp-tableCell .container .about-top-area .left .sns-box ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+#wrap #fullpage .section.about .fp-tableCell .container .about-top-area .left .sns-box ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+}
+#wrap #fullpage .section.about .fp-tableCell .container .about-top-area .left .sns-box ul li a img {
+  width: 100%;
+}
+#wrap #fullpage .section.about .fp-tableCell .container .about-top-area .left .sns-box ul li:not(:last-child) {
+  margin-right: 40px;
+}
+#wrap #fullpage .section.about .fp-tableCell .container .about-top-area .center {
+  width: 506px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+#wrap #fullpage .section.about .fp-tableCell .container .about-top-area .center .time-weather-box {
+  background: url("../img/time-weather-bg.svg") no-repeat center center/110%;
+  width: 100%;
+  height: 168px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+#wrap #fullpage .section.about .fp-tableCell .container .about-top-area .center .time-weather-box #time-weather-slider {
+  width: 100%;
+  height: 100%;
+}
+#wrap #fullpage .section.about .fp-tableCell .container .about-top-area .center .time-weather-box #time-weather-slider .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#wrap #fullpage .section.about .fp-tableCell .container .about-top-area .center .time-weather-box #time-weather-slider .swiper-slide .txt-box span.sub-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: -0.08px;
+  color: #2D313D;
+  display: block;
+  text-align: center;
+  margin-bottom: 8px;
+}
+#wrap #fullpage .section.about .fp-tableCell .container .about-top-area .center .time-weather-box #time-weather-slider .swiper-slide .txt-box h2.title {
+  width: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 62px;
+  line-height: 62px;
+  letter-spacing: -0.08px;
+  color: #2D313D;
+}
+#wrap #fullpage .section.about .fp-tableCell .container .about-top-area .center .time-weather-box #time-weather-slider .swiper-pagination-bullet {
+  background: #2D313D;
+}
+#wrap #fullpage .section.about .fp-tableCell .container .about-top-area .center .time-weather-box #time-weather-slider .swiper-pagination-bullet-active {
+  background: #2D313D;
+}
+#wrap #fullpage .section.about .fp-tableCell .container .about-top-area .center .profile-box {
+  width: 100%;
+  height: 290px;
+  border-radius: 30px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#wrap #fullpage .section.about .fp-tableCell .container .about-top-area .center .profile-box .profile-img {
+  width: 110px;
+  height: 110px;
+  border-radius: 300px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+#wrap #fullpage .section.about .fp-tableCell .container .about-top-area .center .profile-box .profile-img img {
+  width: 200%;
+}
+#wrap #fullpage .section.about .fp-tableCell .container .about-top-area .center .profile-box .txt-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#wrap #fullpage .section.about .fp-tableCell .container .about-top-area .center .profile-box .txt-box span.name {
+  font-family: "SUIT", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.08px;
+  color: #2D313D;
+  margin-bottom: 6px;
+}
+#wrap #fullpage .section.about .fp-tableCell .container .about-top-area .center .profile-box .txt-box span.job {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #BCBCBC;
+  margin-bottom: 20px;
+}
+#wrap #fullpage .section.about .fp-tableCell .container .about-top-area .center .profile-box .txt-box a.pdf-btn {
+  display: block;
+  border-radius: 12px;
+  padding: 8px 40px;
+  background: #2D313D;
+  color: #fff;
+  font-family: "SUIT", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.08px;
+}
+#wrap #fullpage .section.about .fp-tableCell .container .about-top-area .right {
+  width: 507px;
+  height: 100%;
+  background: #fff;
+  border-radius: 30px;
+  overflow: hidden;
+}
+#wrap #fullpage .section.about .fp-tableCell .container .about-bottom-area {
+  width: 100%;
+  height: 243px;
+  background: #dfdfdf;
 }
