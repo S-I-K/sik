@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+img {
+  pointer-events: none;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -22,6 +26,16 @@ li {
 
 .bg-area {
   pointer-events: none;
+}
+
+.scale {
+  position: relative;
+  transition: all 0.4s;
+}
+
+.scale:hover {
+  transform: scale(1.1);
+  z-index: 999;
 }
 
 /* variable */
