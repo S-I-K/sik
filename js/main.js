@@ -30,12 +30,15 @@ $(()=>{
 
   /* real timer */
   let timer = $('#timer');
+  let month = $('#month');
   function getTime() {
     const date = new Date();
     const hours = String(date.getHours()).padStart(2, '0');
     const min = String(date.getMinutes()).padStart(2, '0');
     const sec = String(date.getSeconds()).padStart(2, '0');
+    const day = String(date.getDate()).padStart(2, '0');
     timer.text(`${hours}:${min}:${sec}`);
+    month.text(`${day}`);
   }
   getTime();
   setInterval(getTime, 1000);

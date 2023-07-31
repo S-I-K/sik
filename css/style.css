@@ -139,7 +139,7 @@ header .logo-area {
   overflow: hidden;
   position: relative;
 }
-#wrap #fullpage .section.about .fp-tableCell .container .about-top-area .left .img-box img {
+#wrap #fullpage .section.about .fp-tableCell .container .about-top-area .left .img-box video {
   width: 100%;
   position: absolute;
   bottom: -60px;
