@@ -69,7 +69,7 @@ var info_swiper = new Swiper("#info-slider", {
   },
 });
 
-var swiper = new Swiper("#hobby-slider", {
+var hobby_swiper = new Swiper("#hobby-slider", {
   loop: true,
   autoplay: {
     delay: 6000,
@@ -78,4 +78,9 @@ var swiper = new Swiper("#hobby-slider", {
     el: ".swiper-pagination.hobby-pagination",
     dynamicBullets: true,
   },
+});
+
+var swiper = new Swiper("#web-slider", {
+    slidesPerView: 'auto',
+    spaceBetween: 40,
 });
