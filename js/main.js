@@ -83,4 +83,6 @@ var hobby_swiper = new Swiper("#hobby-slider", {
 var swiper = new Swiper("#web-slider", {
     slidesPerView: 'auto',
     spaceBetween: 40,
+    centeredSlides: true,
+    loop: true,
 });

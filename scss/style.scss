@@ -545,7 +545,7 @@ header {
                     }
                 }
                 .container {
-                    border: 1px solid red;
+                    // border: 1px solid red;
                     height: auto;
                     .title-box {
                         width: 100%;
@@ -553,7 +553,7 @@ header {
                         justify-content: flex-start;
                         margin-bottom: 40px;
                         h2.title {
-                            border: 1px solid red;
+                            // border: 1px solid red;
                             font-family: $en-font;
                             font-size: 48px;
                             font-weight: 900;
@@ -563,7 +563,7 @@ header {
                     }
                     .category-box {
                         width: 100%;
-                        border: 1px solid red;
+                        // border: 1px solid red;
                         margin-bottom: 30px;
                         ul {
                             width: 100%;
@@ -599,7 +599,66 @@ header {
                         .swiper-slide {
                             width: 505px;
                             height: 100%;
-                            border: 1px solid red;
+                            border-radius: 30px;
+                            overflow: hidden;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            .bg-area {
+                                img {
+                                    position: unset;
+                                }
+                            }
+                            .desc {
+                                position: relative;
+                                z-index: 2;
+                                width: 100%;
+                                height: 100%;
+                                padding: 30px 30px;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-start;
+                                justify-content: flex-end;
+                                .title {
+                                    font-family: $en-font;
+                                    font-weight: 800;
+                                    font-size: 28px;
+                                    letter-spacing: -.08px;
+                                    color: #fff;
+                                    margin-bottom: 10px;
+                                }
+                                p {
+                                    font-family: $kr-font;
+                                    font-weight: 700;
+                                    font-size: 28px;
+                                    letter-spacing: -.08px;
+                                    color: #fff;
+                                }
+                            }
+                            .long.desc {
+                                display: none;
+                                align-items: center;
+                                justify-content: center;
+                            }
+                        }
+                        .swiper-slide .bg-area::after {
+                            content: '';
+                            position: absolute;
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                            background: rgba(0, 0, 0, .6);
+                            opacity: 0;
+                            transition: all .4s;
+                        }
+                        .swiper-slide:hover .bg-area::after {
+                            opacity: 1;
+                        }
+                        .swiper-slide:hover .shot.desc {
+                            display: none;
+                        }
+                        .swiper-slide:hover .long.desc {
+                            display: flex;
                         }
                     }
                 }
