@@ -30,22 +30,28 @@ $(()=>{
 
   /* real timer */
   let timer = $('#timer');
-  let month = $('#month');
+  let day_txt = $('#day-txt');
+  let month_txt = $('#month-txt');
+  let months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
   function getTime() {
     const date = new Date();
     const hours = String(date.getHours()).padStart(2, '0');
     const min = String(date.getMinutes()).padStart(2, '0');
     const sec = String(date.getSeconds()).padStart(2, '0');
     const day = String(date.getDate()).padStart(2, '0');
+    const month = date.getMonth();
+
     timer.text(`${hours}:${min}:${sec}`);
-    month.text(`${day}`);
+    day_txt.text(`${day}`);
+    month_txt.text(`${months[month]}`);
   }
   getTime();
   setInterval(getTime, 1000);
 });
 
 /**************** javascript ****************/
-var swiper = new Swiper("#time-weather-slider", {
+var time_weather_swiper = new Swiper("#time-weather-slider", {
   direction: 'vertical',
   autoplay: {
     delay: 6000,
@@ -55,9 +61,21 @@ var swiper = new Swiper("#time-weather-slider", {
   },
 });
 
-var swiper = new Swiper("#info-slider", {
+var info_swiper = new Swiper("#info-slider", {
+  loop: true,
   navigation: {
     nextEl: ".swiper-button-next.info-pagination",
     prevEl: ".swiper-button-prev.info-pagination",
+  },
+});
+
+var swiper = new Swiper("#hobby-slider", {
+  loop: true,
+  autoplay: {
+    delay: 6000,
+  },
+  pagination: {
+    el: ".swiper-pagination.hobby-pagination",
+    dynamicBullets: true,
   },
 });

@@ -39,6 +39,10 @@ li {
   z-index: 999;
 }
 
+.mt20 {
+  margin-top: 20px !important;
+}
+
 /* variable */
 /* header */
 header {
@@ -314,11 +318,164 @@ header .logo-area {
 }
 #wrap #fullpage .section.about .fp-tableCell .container .about-top-area .right .info-box #info-slider .swiper-slide {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+#wrap #fullpage .section.about .fp-tableCell .container .about-top-area .right .info-box #info-slider .swiper-slide .title {
+  width: 60%;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: -0.08px;
+  color: #2D313D;
+  padding: 30px 0;
+  border-bottom: 1px solid #BCBCBC;
+  margin-bottom: 20px;
+}
+#wrap #fullpage .section.about .fp-tableCell .container .about-top-area .right .info-box #info-slider .swiper-slide ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+#wrap #fullpage .section.about .fp-tableCell .container .about-top-area .right .info-box #info-slider .swiper-slide ul li {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+#wrap #fullpage .section.about .fp-tableCell .container .about-top-area .right .info-box #info-slider .swiper-slide ul li .date {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: -0.08px;
+  color: #BCBCBC;
+}
+#wrap #fullpage .section.about .fp-tableCell .container .about-top-area .right .info-box #info-slider .swiper-slide ul li .name {
+  font-family: "SUIT", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #2D313D;
+  margin: 4px 0;
+}
+#wrap #fullpage .section.about .fp-tableCell .container .about-top-area .right .info-box #info-slider .swiper-slide ul li .sub-name {
+  font-family: "SUIT", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: -0.08px;
+  color: #a3a3a3;
+}
+#wrap #fullpage .section.about .fp-tableCell .container .about-top-area .right .info-box #info-slider .swiper-slide ul li:not(:last-child) {
+  margin-bottom: 20px;
+}
+#wrap #fullpage .section.about .fp-tableCell .container .about-top-area .right .info-box #info-slider .swiper-slide ul.skill-box {
+  width: 60%;
+}
+#wrap #fullpage .section.about .fp-tableCell .container .about-top-area .right .info-box #info-slider .swiper-slide ul.skill-box li {
+  width: 100%;
+}
+#wrap #fullpage .section.about .fp-tableCell .container .about-top-area .right .info-box #info-slider .swiper-slide ul.skill-box li .name {
+  margin: 0 0 20px 0;
+}
+#wrap #fullpage .section.about .fp-tableCell .container .about-top-area .right .info-box #info-slider .swiper-slide ul.skill-box li ul.skill-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+}
+#wrap #fullpage .section.about .fp-tableCell .container .about-top-area .right .info-box #info-slider .swiper-slide ul.skill-box li ul.skill-list li {
+  width: 60px;
+}
+#wrap #fullpage .section.about .fp-tableCell .container .about-top-area .right .info-box #info-slider .swiper-slide ul.skill-box li ul.skill-list li img {
+  width: 100%;
+}
+#wrap #fullpage .section.about .fp-tableCell .container .about-top-area .right .info-box #info-slider .swiper-slide ul.skill-box li ul.skill-list li:not(:last-child) {
+  margin: 0 20px 0 0;
+}
+#wrap #fullpage .section.about .fp-tableCell .container .about-top-area .right .info-box #info-slider .swiper-slide ul.skill-box li:not(:last-child) {
+  margin-bottom: 34px;
+}
+#wrap #fullpage .section.about .fp-tableCell .container .about-top-area .right .info-box #info-slider .swiper-button-next, #wrap #fullpage .section.about .fp-tableCell .container .about-top-area .right .info-box #info-slider .swiper-button-prev {
+  --swiper-navigation-size: 22px;
+  --swiper-theme-color: $font-black;
+  opacity: 0.4;
+  transition: all 0.4s;
+}
+#wrap #fullpage .section.about .fp-tableCell .container .about-top-area .right .info-box #info-slider .swiper-button-next:hover, #wrap #fullpage .section.about .fp-tableCell .container .about-top-area .right .info-box #info-slider .swiper-button-prev:hover {
+  opacity: 1;
+}
+#wrap #fullpage .section.about .fp-tableCell .container .about-top-area .right .info-box #info-slider .swiper-button-next {
+  right: 20px;
+}
+#wrap #fullpage .section.about .fp-tableCell .container .about-top-area .right .info-box #info-slider .swiper-button-prev {
+  left: 20px;
 }
 #wrap #fullpage .section.about .fp-tableCell .container .about-bottom-area {
   width: 100%;
   height: 243px;
-  background: #dfdfdf;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#wrap #fullpage .section.about .fp-tableCell .container .about-bottom-area .call-box,
+#wrap #fullpage .section.about .fp-tableCell .container .about-bottom-area .email-box {
+  width: 243px;
+  height: 100%;
+  background: #fff;
+  border-radius: 30px;
+}
+#wrap #fullpage .section.about .fp-tableCell .container .about-bottom-area .call-box .img-box,
+#wrap #fullpage .section.about .fp-tableCell .container .about-bottom-area .email-box .img-box {
+  width: 100%;
+  height: 100%;
+}
+#wrap #fullpage .section.about .fp-tableCell .container .about-bottom-area .call-box .img-box a,
+#wrap #fullpage .section.about .fp-tableCell .container .about-bottom-area .email-box .img-box a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#wrap #fullpage .section.about .fp-tableCell .container .about-bottom-area .call-box .img-box a img,
+#wrap #fullpage .section.about .fp-tableCell .container .about-bottom-area .email-box .img-box a img {
+  width: 33%;
+}
+#wrap #fullpage .section.about .fp-tableCell .container .about-bottom-area .comment-box {
+  width: 769px;
+  height: 100%;
+  background: #fff;
+  border-radius: 30px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#wrap #fullpage .section.about .fp-tableCell .container .about-bottom-area .hobby-box {
+  width: 243px;
+  height: 100%;
+  background: #fff;
+  border-radius: 30px;
+  overflow: hidden;
+}
+#wrap #fullpage .section.about .fp-tableCell .container .about-bottom-area .hobby-box #hobby-slider {
+  width: 100%;
+  height: 100%;
+}
+#wrap #fullpage .section.about .fp-tableCell .container .about-bottom-area .hobby-box #hobby-slider .swiper-wrapper .swiper-slide .img-box {
+  width: 100%;
+  height: 100%;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#wrap #fullpage .section.about .fp-tableCell .container .about-bottom-area .hobby-box #hobby-slider .swiper-wrapper .swiper-slide .img-box img {
+  width: 100%;
 }
