@@ -466,8 +466,17 @@ header {
                             display: flex;
                             align-items: center;
                             justify-content: center;
+                            padding: 0 79px;
                             .bg-area{
-
+                            }
+                            p {
+                                position: relative;
+                                z-index: 2;
+                                font-family: $kr-font;
+                                font-weight: 400;
+                                font-size: 18px;
+                                line-height: 1.6;
+                                letter-spacing: -.08px;
                             }
                         }
 
@@ -497,6 +506,30 @@ header {
                                 }
                             }
                         }
+                    }
+                }
+            }
+        }
+        /************** work **************/
+        .section.work {
+            .fp-tableCell {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                overflow: hidden;
+                background: #78B866;
+                .bg-area {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    overflow: hidden;
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-end;
+                    img{
+                        width: 100%;
+                        position: absolute;
+                        top: -100vh;
                     }
                 }
             }

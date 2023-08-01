@@ -71,6 +71,7 @@ header .logo-area {
 #wrap #fullpage {
   /************** intro **************/
   /************** about **************/
+  /************** work **************/
 }
 #wrap #fullpage .section.intro .fp-tableCell {
   width: 100%;
@@ -456,6 +457,16 @@ header .logo-area {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0 79px;
+}
+#wrap #fullpage .section.about .fp-tableCell .container .about-bottom-area .comment-box p {
+  position: relative;
+  z-index: 2;
+  font-family: "SUIT", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+  letter-spacing: -0.08px;
 }
 #wrap #fullpage .section.about .fp-tableCell .container .about-bottom-area .hobby-box {
   width: 243px;
@@ -478,4 +489,25 @@ header .logo-area {
 }
 #wrap #fullpage .section.about .fp-tableCell .container .about-bottom-area .hobby-box #hobby-slider .swiper-wrapper .swiper-slide .img-box img {
   width: 100%;
+}
+#wrap #fullpage .section.work .fp-tableCell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #78B866;
+}
+#wrap #fullpage .section.work .fp-tableCell .bg-area {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+#wrap #fullpage .section.work .fp-tableCell .bg-area img {
+  width: 100%;
+  position: absolute;
+  top: -100vh;
 }
