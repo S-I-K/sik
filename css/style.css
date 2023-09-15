@@ -79,9 +79,9 @@ header .logo-area {
   justify-content: center;
 }
 #wrap #fullpage {
-  /************** intro **************/
-  /************** about **************/
-  /************** work **************/
+  /**** intro ****/
+  /**** about ****/
+  /**** work ****/
 }
 #wrap #fullpage .section.intro .fp-tableCell {
   width: 100%;
@@ -536,7 +536,7 @@ header .logo-area {
   font-size: 48px;
   font-weight: 900;
   letter-spacing: -0.08px;
-  color: #2D313D;
+  color: #fff;
 }
 #wrap #fullpage .section.work .fp-tableCell .container .category-box {
   width: 100%;
@@ -553,26 +553,30 @@ header .logo-area {
   font-weight: 300;
   font-size: 20px;
   letter-spacing: -0.08px;
-  color: #565656;
+  color: #fff;
   cursor: pointer;
 }
 #wrap #fullpage .section.work .fp-tableCell .container .category-box ul li:hover,
 #wrap #fullpage .section.work .fp-tableCell .container .category-box ul li.active {
-  color: #2D313D;
+  color: #fff;
   font-weight: 500;
   transition: all 0.4s;
 }
 #wrap #fullpage .section.work .fp-tableCell .container .category-box ul li:not(:last-child) {
   margin-right: 60px;
 }
-#wrap #fullpage .section.work .fp-tableCell .web-slide-box {
-  width: 100%;
+#wrap #fullpage .section.work .fp-tableCell .work-slide-box.active {
+  display: block;
 }
-#wrap #fullpage .section.work .fp-tableCell .web-slide-box .category-slider {
+#wrap #fullpage .section.work .fp-tableCell .work-slide-box {
+  width: 100%;
+  display: none;
+}
+#wrap #fullpage .section.work .fp-tableCell .work-slide-box .category-slider {
   width: 100%;
   height: 505px;
 }
-#wrap #fullpage .section.work .fp-tableCell .web-slide-box .category-slider .swiper-slide {
+#wrap #fullpage .section.work .fp-tableCell .work-slide-box .category-slider .swiper-slide {
   width: 505px;
   height: 100%;
   border-radius: 30px;
@@ -581,10 +585,10 @@ header .logo-area {
   align-items: center;
   justify-content: center;
 }
-#wrap #fullpage .section.work .fp-tableCell .web-slide-box .category-slider .swiper-slide .bg-area img {
+#wrap #fullpage .section.work .fp-tableCell .work-slide-box .category-slider .swiper-slide .bg-area img {
   position: unset;
 }
-#wrap #fullpage .section.work .fp-tableCell .web-slide-box .category-slider .swiper-slide .desc {
+#wrap #fullpage .section.work .fp-tableCell .work-slide-box .category-slider .swiper-slide .desc {
   position: relative;
   z-index: 2;
   width: 100%;
@@ -595,7 +599,7 @@ header .logo-area {
   align-items: flex-start;
   justify-content: flex-end;
 }
-#wrap #fullpage .section.work .fp-tableCell .web-slide-box .category-slider .swiper-slide .desc .title {
+#wrap #fullpage .section.work .fp-tableCell .work-slide-box .category-slider .swiper-slide .desc .title {
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
   font-size: 28px;
@@ -603,19 +607,19 @@ header .logo-area {
   color: #fff;
   margin-bottom: 10px;
 }
-#wrap #fullpage .section.work .fp-tableCell .web-slide-box .category-slider .swiper-slide .desc p {
+#wrap #fullpage .section.work .fp-tableCell .work-slide-box .category-slider .swiper-slide .desc p {
   font-family: "SUIT", sans-serif;
   font-weight: 700;
   font-size: 28px;
   letter-spacing: -0.08px;
   color: #fff;
 }
-#wrap #fullpage .section.work .fp-tableCell .web-slide-box .category-slider .swiper-slide .long.desc {
+#wrap #fullpage .section.work .fp-tableCell .work-slide-box .category-slider .swiper-slide .long.desc {
   display: none;
   align-items: center;
   justify-content: center;
 }
-#wrap #fullpage .section.work .fp-tableCell .web-slide-box .category-slider .swiper-slide .bg-area::after {
+#wrap #fullpage .section.work .fp-tableCell .work-slide-box .category-slider .swiper-slide .bg-area::after {
   content: "";
   position: absolute;
   display: block;
@@ -625,12 +629,12 @@ header .logo-area {
   opacity: 0;
   transition: all 0.4s;
 }
-#wrap #fullpage .section.work .fp-tableCell .web-slide-box .category-slider .swiper-slide:hover .bg-area::after {
+#wrap #fullpage .section.work .fp-tableCell .work-slide-box .category-slider .swiper-slide:hover .bg-area::after {
   opacity: 1;
 }
-#wrap #fullpage .section.work .fp-tableCell .web-slide-box .category-slider .swiper-slide:hover .shot.desc {
+#wrap #fullpage .section.work .fp-tableCell .work-slide-box .category-slider .swiper-slide:hover .shot.desc {
   display: none;
 }
-#wrap #fullpage .section.work .fp-tableCell .web-slide-box .category-slider .swiper-slide:hover .long.desc {
+#wrap #fullpage .section.work .fp-tableCell .work-slide-box .category-slider .swiper-slide:hover .long.desc {
   display: flex;
 }
