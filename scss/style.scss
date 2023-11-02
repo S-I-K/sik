@@ -42,6 +42,31 @@ $en-font: 'Montserrat', sans-serif;
 $font-black: #2D313D;
 $font-gray: #BCBCBC;
 
+
+/* animation */
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.14);
+    }
+}
+@keyframes loop_flow {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+
+
+
+
 /* header */
 header {
     position: absolute;
@@ -207,11 +232,15 @@ header {
                             justify-content: space-between;
 
                             .time-weather-box {
-                                background: url('../img/time-weather-bg.svg') no-repeat center center / 110%;
+                                background: url('../img/weather-bg.svg') no-repeat center center / 110%;
                                 width: 100%;
                                 height: 168px;
                                 border-radius: 30px;
                                 overflow: hidden;
+                                position: relative;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
                                 #time-weather-slider {
                                     width: 100%;
                                     height: 100%;
@@ -250,6 +279,36 @@ header {
                                     }
                                     .swiper-pagination-bullet-active {
                                         background: $font-black;
+                                    }
+                                }
+                                .weather-ob {
+                                    position: absolute;
+                                    top: 0;
+                                }
+                                .weather-ob.cloud {
+                                    width: 113%;
+                                    top: auto;
+                                    bottom: -48px;
+                                    img {
+                                        width: 100%;
+                                        transition: all .4s;
+                                        transform-origin: center bottom;
+                                    }   
+                                }
+                                .weather-ob.cloud02 {
+                                    width: 100%;
+                                    top: auto;
+                                    bottom: 0;
+                                    left: 0;
+                                    display: flex;
+                                    img {
+                                        animation: loop_flow 40s infinite linear;
+                                        width: 100%;
+                                    }
+                                }
+                                .weather-ob.sun {
+                                    img {
+                                        animation: scale 4s infinite alternate cubic-bezier(0.37, 0, 0.63, 1);
                                     }
                                 }
                             }

@@ -44,6 +44,23 @@ li {
 }
 
 /* variable */
+/* animation */
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.14);
+  }
+}
+@keyframes loop_flow {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
 /* header */
 header {
   position: absolute;
@@ -202,11 +219,15 @@ header .logo-area {
   justify-content: space-between;
 }
 #wrap #fullpage .section.about .fp-tableCell .container .about-top-area .center .time-weather-box {
-  background: url("../img/time-weather-bg.svg") no-repeat center center/110%;
+  background: url("../img/weather-bg.svg") no-repeat center center/110%;
   width: 100%;
   height: 168px;
   border-radius: 30px;
   overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #wrap #fullpage .section.about .fp-tableCell .container .about-top-area .center .time-weather-box #time-weather-slider {
   width: 100%;
@@ -245,6 +266,34 @@ header .logo-area {
 }
 #wrap #fullpage .section.about .fp-tableCell .container .about-top-area .center .time-weather-box #time-weather-slider .swiper-pagination-bullet-active {
   background: #2D313D;
+}
+#wrap #fullpage .section.about .fp-tableCell .container .about-top-area .center .time-weather-box .weather-ob {
+  position: absolute;
+  top: 0;
+}
+#wrap #fullpage .section.about .fp-tableCell .container .about-top-area .center .time-weather-box .weather-ob.cloud {
+  width: 113%;
+  top: auto;
+  bottom: -48px;
+}
+#wrap #fullpage .section.about .fp-tableCell .container .about-top-area .center .time-weather-box .weather-ob.cloud img {
+  width: 100%;
+  transition: all 0.4s;
+  transform-origin: center bottom;
+}
+#wrap #fullpage .section.about .fp-tableCell .container .about-top-area .center .time-weather-box .weather-ob.cloud02 {
+  width: 100%;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  display: flex;
+}
+#wrap #fullpage .section.about .fp-tableCell .container .about-top-area .center .time-weather-box .weather-ob.cloud02 img {
+  animation: loop_flow 40s infinite linear;
+  width: 100%;
+}
+#wrap #fullpage .section.about .fp-tableCell .container .about-top-area .center .time-weather-box .weather-ob.sun img {
+  animation: scale 4s infinite alternate cubic-bezier(0.37, 0, 0.63, 1);
 }
 #wrap #fullpage .section.about .fp-tableCell .container .about-top-area .center .profile-box {
   width: 100%;
