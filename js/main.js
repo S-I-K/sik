@@ -1,34 +1,36 @@
-console.log(' 2023.07.11 ');
-
 /**** jquery ****/
 $(()=>{
 
-
-  /* fullpage.js */
-  $('#fullpage').fullpage({
-    autoScrolling:true,
-		scrollHorizontally: true,
-    navigation: true,
-    'afterLoad': function (anchorLink, index) {
-			if (index !== 1){
-				$('header').css({
-          top: '0px',
-          transform: 'translateY(0%)',
-        });
-        $('header > .logo-area').css({
-          fontSize: '40px',
-        });
-			}else{
-        $('header').css({
-          top: '50%',
-          transform: 'translateY(-50%)',
-        });
-        $('header > .logo-area').css({
-          fontSize: '68px',
-        });
-      }
-		},
-	});
+  var swiper = new Swiper("#wrap-slide", {
+    direction: "vertical",
+    mousewheel: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      dynamicBullets: true,
+    },
+    on: {
+      transitionEnd: ()=>{
+        if(swiper.realIndex != 0){
+          $('header').css({
+            top: '0%',
+            transform: 'translateY(0%)',
+          });
+          $('header .logo').css({
+            height: '60px',
+          });
+        }else{
+          $('header').css({
+            top: '50%',
+            transform: 'translateY(-50%)',
+          });
+          $('header .logo').css({
+            height: '260px',
+          });
+        }
+      },
+    },
+  });
 
 
   /* real timer */
@@ -56,30 +58,14 @@ $(()=>{
   setInterval(getTime, 1000);
 
 
-  /* tab menu func */
-  let work_categorys = $('.category-box > ul li');
+  /* start slide index */
+  // swiper.slideTo(1)
 
-  work_categorys.click(function(e){
-    let work_slide_boxs = $('.work-slide-box');
-    let work_slide_box = $('.work-slide-box').eq($(this).index());
-    console.log($(this).index());
-    console.log(work_slide_box);
-
-    $(this).addClass('active');
-    $(this).siblings().removeClass('active');
-    work_slide_boxs.removeClass('active');
-    work_slide_box.addClass('active');
-  });
 });
 
 
 
-
-
-
-
-
-/**** javascript ****/
+/* swiper */
 var time_weather_swiper = new Swiper("#time-weather-slider", {
   direction: 'vertical',
   autoplay: {
@@ -111,7 +97,7 @@ var hobby_swiper = new Swiper("#hobby-slider", {
 
 var swiper = new Swiper("#work-slider", {
     slidesPerView: 'auto',
-    spaceBetween: 40,
+    spaceBetween: 200,
     centeredSlides: true,
     loop: true,
 });

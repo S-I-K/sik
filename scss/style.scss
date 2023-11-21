@@ -63,15 +63,12 @@ $font-gray: #BCBCBC;
     }
 }
 
-
-
-
-
 /* header */
 header {
     position: absolute;
     z-index: 999;
-    top: 0;
+    top: 50%;
+    transform: translateY(-50%);
     left: 0;
     display: flex;
     justify-content: center;
@@ -80,18 +77,27 @@ header {
     height: auto;
     padding: 30px 0;
     transition: all .4s;
-    display: none; /* 다 작업하고 지우면 됨 */
+    /* display: none; */ /* 다 작업하고 지우면 됨 */
     .logo-area {
-        color: $font-black;
-        font-family: $en-font;
-        font-size: 68px;
-        font-weight: 900;
-        letter-spacing: -.08px;
-        transition: all .4s;
+        a.logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: auto;
+            height: 260px;
+            transition: all .4s;
+            img {
+                width: auto;
+                height: 100%;
+            }
+        }
     }
 }
 
+/* wrap */
 #wrap {
+    width: 100%;
+    height: auto;
     .container {
         position: relative;
         z-index: 2;
@@ -103,628 +109,508 @@ header {
         align-items: center;
         justify-content: center;
     }
-    #fullpage {
-        /**** intro ****/
+    #wrap-slide {
+        width: 100%;
+        height: 100vh;
+
+        /* intro */
         .section.intro {
-            .fp-tableCell{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .bg-area {
                 width: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                .bg-area {
-                    width: 100%;
-                    height: 100%;
-                    overflow: hidden;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    img {
-                        width: 100%;
-                    }
-                }
-            }
-        }
-        /**** about ****/
-        .section.about {
-            .fp-tableCell {
-                display: flex;
-                align-items: center;
-                justify-content: center;
+                height: 100%;
                 overflow: hidden;
-                background: $main-color;
-                .bg-area {
-                    position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img {
                     width: 100%;
-                    height: 100%;
-                    overflow: hidden;
-                    display: flex;
-                    justify-content: center;
-                    align-items: flex-start;
-                    img{
-                        width: 100%;
-                    }
-                }
-                .container {
-                    position: relative;
-                    z-index: 2;
-                    // border: 1px solid red;
-                    width: 1560px;
-                    height: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-
-                    /* about-top-area */
-                    .about-top-area {
-                        display: flex;
-                        align-items: flex-start;
-                        justify-content: space-between;
-                        width: 100%;
-                        height: 478px;
-                        // border: 1px solid red;
-                        margin-bottom: 20px;
-                        .left {
-                            width: 507px;
-                            height: 100%;
-                            display: flex;
-                            flex-direction: column;
-                            align-items: flex-start;
-                            justify-content: space-between;
-                            .img-box {
-                                // border: 1px solid red;
-                                width: 100%;
-                                height: 280px;
-                                border-radius: 30px;
-                                overflow: hidden;
-                                position: relative;
-                                video{
-                                    width: 100%;
-                                    position: absolute;
-                                    bottom: -60px;
-                                    pointer-events: none;
-                                }
-                            }
-                            .sns-box {
-                                // border: 1px solid red;
-                                width: 100%;
-                                height: 178px;
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-                                position: relative;
-                                background: #fff;
-                                border-radius: 30px;
-                                .bg-area {
-                                    align-items: flex-end;
-                                    opacity: .3;
-                                }
-                                ul {
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: center;
-                                    position: relative;
-                                    z-index: 2;
-                                    li {
-                                        a {
-                                            display: flex;
-                                            align-items: center;
-                                            justify-content: center;
-                                            width: 100px;
-                                            img {
-                                                width: 100%;
-                                            }
-                                        }
-                                    }
-                                    li:not(:last-child){
-                                        margin-right: 40px;
-                                    }
-                                }
-                            }
-                        }
-                        .center {
-                            width: 506px;
-                            height: 100%;
-                            // border: 1px solid red;
-                            display: flex;
-                            flex-direction: column;
-                            align-items: flex-start;
-                            justify-content: space-between;
-
-                            .time-weather-box {
-                                background: url('../img/weather-bg.svg') no-repeat center center / 110%;
-                                width: 100%;
-                                height: 168px;
-                                border-radius: 30px;
-                                overflow: hidden;
-                                position: relative;
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-                                #time-weather-slider {
-                                    width: 100%;
-                                    height: 100%;
-                                    .swiper-slide {
-                                        display: flex;
-                                        align-items: center;
-                                        justify-content: center;
-                                        .txt-box{
-                                            span.sub-title{
-                                                font-family: $en-font;
-                                                font-weight: 500;
-                                                font-size: 18px;
-                                                line-height: 18px;
-                                                letter-spacing: -.08px;
-                                                color: $font-black;
-                                                display: block;
-                                                text-align: center;
-                                                margin-bottom: 8px;
-                                            }
-                                            h2.title{
-                                                width: 260px;
-                                                display: flex;
-                                                align-items: center;
-                                                justify-content: center;
-                                                font-family: $en-font;
-                                                font-weight: 900;
-                                                font-size: 62px;
-                                                line-height: 62px;
-                                                letter-spacing: -.08px;
-                                                color: $font-black;
-                                            }
-                                        }
-                                    }
-                                    .swiper-pagination-bullet {
-                                        background: $font-black;
-                                    }
-                                    .swiper-pagination-bullet-active {
-                                        background: $font-black;
-                                    }
-                                }
-                                .weather-ob {
-                                    position: absolute;
-                                    top: 0;
-                                }
-                                .weather-ob.cloud {
-                                    width: 113%;
-                                    top: auto;
-                                    bottom: -48px;
-                                    img {
-                                        width: 100%;
-                                        transition: all .4s;
-                                        transform-origin: center bottom;
-                                    }   
-                                }
-                                .weather-ob.cloud02 {
-                                    width: 100%;
-                                    top: auto;
-                                    bottom: 0;
-                                    left: 0;
-                                    display: flex;
-                                    img {
-                                        animation: loop_flow 40s infinite linear;
-                                        width: 100%;
-                                    }
-                                }
-                                .weather-ob.sun {
-                                    img {
-                                        animation: scale 4s infinite alternate cubic-bezier(0.37, 0, 0.63, 1);
-                                    }
-                                }
-                            }
-                            .profile-box {
-                                width: 100%;
-                                height: 290px;
-                                border-radius: 30px;
-                                background: #fff;
-                                display: flex;
-                                flex-direction: column;
-                                align-items: center;
-                                justify-content: center;
-                                .profile-img {
-                                    width: 110px;
-                                    height: 110px;
-                                    border-radius: 300px;
-                                    overflow: hidden;
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: center;
-                                    margin-bottom: 20px;
-                                    img {
-                                        width: 200%;
-                                    }
-                                }
-                                .txt-box {
-                                    display: flex;
-                                    flex-direction: column;
-                                    align-items: center;
-                                    justify-content: center;
-                                    span.name {
-                                        font-family: $kr-font;
-                                        font-size: 20px;
-                                        font-weight: 700;
-                                        letter-spacing: -.08px;
-                                        color: $font-black;
-                                        margin-bottom: 6px;
-                                    }
-                                    span.job {
-                                        font-family: $en-font;
-                                        font-weight: 500;
-                                        font-size: 16px;
-                                        color: $font-gray;
-                                        margin-bottom: 20px;
-                                    }
-                                    a.pdf-btn {
-                                        display: block;
-                                        border-radius: 12px;
-                                        padding: 8px 40px;
-                                        background: $font-black;
-                                        color: #fff;
-                                        font-family: $kr-font;
-                                        font-size: 16px;
-                                        font-weight: 700;
-                                        letter-spacing: -.08px;
-                                    }
-                                }
-                            }
-                        }
-                        .right {
-                            width: 507px;
-                            height: 100%;
-                            // border: 1px solid red;
-                            background: #fff;
-                            border-radius: 30px;
-                            overflow: hidden;
-                            position: relative;
-                            .bg-area {
-                                display: flex;
-                                align-items: center;
-                                justify-content: flex-start;
-                                img {
-                                    width: auto;
-                                    height: 100%;
-                                    opacity: .4;
-                                }
-                            }
-                            .info-box {
-                                width: 100%;
-                                height: 100%;
-                                #info-slider {
-                                    width: 100%;
-                                    height: 100%;
-                                    .swiper-slide {
-                                        display: flex;
-                                        flex-direction: column;
-                                        align-items: center;
-                                        justify-content: flex-start;
-                                        .title {
-                                            width: 60%;
-                                            text-align: center;
-                                            font-family: $en-font;
-                                            font-size: 28px;
-                                            line-height: 1;
-                                            font-weight: 700;
-                                            letter-spacing: -.08px;
-                                            color: $font-black;
-                                            padding: 30px 0;
-                                            border-bottom: 1px solid $font-gray;
-                                            margin-bottom: 20px;
-                                        }
-                                        ul {
-                                            display: flex;
-                                            flex-direction: column;
-                                            flex-wrap: wrap;
-                                            li {
-                                                display: flex;
-                                                flex-direction: column;
-                                                align-items: center;
-                                                justify-content: center;
-                                                .date{
-                                                    font-family: $en-font;
-                                                    font-weight: 300;
-                                                    font-size: 14px;
-                                                    line-height: 1.2;
-                                                    letter-spacing: -.08px;
-                                                    color: $font-gray;
-                                                }
-                                                .name{
-                                                    font-family: $kr-font;
-                                                    font-weight: 600;
-                                                    font-size: 18px;
-                                                    line-height: 1.2;
-                                                    color: $font-black;
-                                                    margin: 4px 0;
-                                                }
-                                                .sub-name{
-                                                    font-family: $kr-font;
-                                                    font-weight: 500;
-                                                    font-size: 14px;
-                                                    line-height: 1;
-                                                    letter-spacing: -.08px;
-                                                    color: #a3a3a3;
-                                                }
-                                            }
-                                            li:not(:last-child){
-                                                margin-bottom: 20px;
-                                            }
-                                        }
-                                        ul.skill-box {
-                                            width: 60%;
-                                            li {
-                                                width: 100%;
-                                                .name{
-                                                    margin: 0 0 20px 0;
-                                                }
-                                                ul.skill-list {
-                                                    display: flex;
-                                                    align-items: center;
-                                                    justify-content: center;
-                                                    flex-direction: row;
-                                                    width: 100%;
-                                                    li{
-                                                        width: 60px;
-                                                        img {
-                                                            width: 100%;
-                                                        }
-                                                    }
-                                                    li:not(:last-child) {
-                                                        margin: 0 20px 0 0;
-                                                    }
-                                                }
-                                            }
-                                            li:not(:last-child) {
-                                                margin-bottom: 34px;
-                                            }
-                                        }
-                                    }
-                                    .swiper-button-next, .swiper-button-prev{
-                                        --swiper-navigation-size: 22px;
-                                        --swiper-theme-color: $font-black;
-                                        opacity: .4;
-                                        transition: all .4s;
-                                    }
-                                    .swiper-button-next:hover, .swiper-button-prev:hover{
-                                        opacity: 1;
-                                    }
-                                    .swiper-button-next {
-                                        right: 20px;
-                                    }
-                                    .swiper-button-prev {
-                                        left: 20px;
-                                    }
-                                }
-                            }
-                        }
-                    }
-
-                    /* about-bottom-area */
-                    .about-bottom-area {
-                        width: 100%;
-                        height: 243px;
-                        // border: 1px solid red;
-                        display: flex;
-                        align-items: center;
-                        justify-content: space-between;
-                        .call-box,
-                        .email-box {
-                            width: 243px;
-                            height: 100%;
-                            background: #fff;
-                            border-radius: 30px;
-                            .img-box {
-                                width: 100%;
-                                height: 100%;
-                                a {
-                                    width: 100%;
-                                    height: 100%;
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: center;
-                                    img {
-                                        width: 33%;
-                                    }
-                                }
-                            }
-                        }
-
-                        .comment-box {
-                            width: 769px;
-                            height: 100%;
-                            background: #fff;
-                            border-radius: 30px;
-                            position: relative;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            padding: 0 79px;
-                            .bg-area{
-                            }
-                            p {
-                                position: relative;
-                                z-index: 2;
-                                font-family: $kr-font;
-                                font-weight: 400;
-                                font-size: 18px;
-                                line-height: 1.6;
-                                letter-spacing: -.08px;
-                            }
-                        }
-
-                        .hobby-box {
-                            width: 243px;
-                            height: 100%;
-                            background: #fff;
-                            border-radius: 30px;
-                            overflow: hidden;
-                            #hobby-slider {
-                                width: 100%;
-                                height: 100%;
-                                .swiper-wrapper {
-                                    .swiper-slide {
-                                        .img-box{
-                                            width: 100%;
-                                            height: 100%;
-                                            padding: 0 30px;
-                                            display: flex;
-                                            align-items: center;
-                                            justify-content: center;
-                                            img{
-                                                width: 100%;
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
                 }
             }
         }
-        /**** work ****/
-        .section.work {
-            .fp-tableCell {
+
+        /* about */
+        .section.about {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background: $main-color;
+            .bg-area {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                img{
+                    width: 100%;
+                }
+            }
+            .container {
+                position: relative;
+                z-index: 2;
+                // border: 1px solid red;
+                width: 1560px;
+                height: 100%;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                overflow: hidden;
-                background: #78B866;
-                .bg-area {
-                    position: absolute;
-                    width: 100%;
-                    height: 100%;
-                    overflow: hidden;
+
+                /* about-top-area */
+                .about-top-area {
                     display: flex;
-                    justify-content: center;
-                    align-items: flex-end;
-                    img{
-                        width: 100%;
-                        position: absolute;
-                        top: -100vh;
-                    }
-                }
-                .container {
+                    align-items: flex-start;
+                    justify-content: space-between;
+                    width: 100%;
+                    height: 478px;
                     // border: 1px solid red;
-                    height: auto;
-                    .title-box {
-                        width: 100%;
+                    margin-bottom: 20px;
+                    .left {
+                        width: 507px;
+                        height: 100%;
                         display: flex;
-                        justify-content: flex-start;
-                        margin-bottom: 40px;
-                        h2.title {
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: space-between;
+                        .img-box {
                             // border: 1px solid red;
-                            font-family: $en-font;
-                            font-size: 48px;
-                            font-weight: 900;
-                            letter-spacing: -.08px;
-                            color: #fff;
+                            width: 100%;
+                            height: 280px;
+                            border-radius: 30px;
+                            overflow: hidden;
+                            position: relative;
+                            video{
+                                width: 100%;
+                                position: absolute;
+                                bottom: -60px;
+                                pointer-events: none;
+                            }
+                        }
+                        .sns-box {
+                            // border: 1px solid red;
+                            width: 100%;
+                            height: 178px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            position: relative;
+                            background: #fff;
+                            border-radius: 30px;
+                            .bg-area {
+                                align-items: flex-end;
+                                opacity: .3;
+                            }
+                            ul {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                position: relative;
+                                z-index: 2;
+                                li {
+                                    a {
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        width: 100px;
+                                        img {
+                                            width: 100%;
+                                        }
+                                    }
+                                }
+                                li:not(:last-child){
+                                    margin-right: 40px;
+                                }
+                            }
                         }
                     }
-                    .category-box {
-                        width: 100%;
+                    .center {
+                        width: 506px;
+                        height: 100%;
                         // border: 1px solid red;
-                        margin-bottom: 30px;
-                        ul {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: space-between;
+
+                        .time-weather-box {
+                            background: url('../img/weather-bg.svg') no-repeat center center / 110%;
                             width: 100%;
+                            height: 168px;
+                            border-radius: 30px;
+                            overflow: hidden;
+                            position: relative;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            #time-weather-slider {
+                                width: 100%;
+                                height: 100%;
+                                .swiper-slide {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    .txt-box{
+                                        span.sub-title{
+                                            font-family: $en-font;
+                                            font-weight: 500;
+                                            font-size: 18px;
+                                            line-height: 18px;
+                                            letter-spacing: -.08px;
+                                            color: $font-black;
+                                            display: block;
+                                            text-align: center;
+                                            margin-bottom: 8px;
+                                        }
+                                        h2.title{
+                                            width: 260px;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            font-family: $en-font;
+                                            font-weight: 900;
+                                            font-size: 62px;
+                                            line-height: 62px;
+                                            letter-spacing: -.08px;
+                                            color: $font-black;
+                                        }
+                                    }
+                                }
+                                .swiper-pagination-bullet {
+                                    background: $font-black;
+                                }
+                                .swiper-pagination-bullet-active {
+                                    background: $font-black;
+                                }
+                            }
+                            .weather-ob {
+                                position: absolute;
+                                top: 0;
+                            }
+                            .weather-ob.cloud {
+                                width: 113%;
+                                top: auto;
+                                bottom: -48px;
+                                img {
+                                    width: 100%;
+                                    transition: all .4s;
+                                    transform-origin: center bottom;
+                                }   
+                            }
+                            .weather-ob.cloud02 {
+                                width: 100%;
+                                top: auto;
+                                bottom: 0;
+                                left: 0;
+                                display: flex;
+                                img {
+                                    animation: loop_flow 40s infinite linear;
+                                    width: 100%;
+                                }
+                            }
+                            .weather-ob.sun {
+                                img {
+                                    animation: scale 4s infinite alternate cubic-bezier(0.37, 0, 0.63, 1);
+                                }
+                            }
+                        }
+                        .profile-box {
+                            width: 100%;
+                            height: 290px;
+                            border-radius: 30px;
+                            background: #fff;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            .profile-img {
+                                width: 110px;
+                                height: 110px;
+                                border-radius: 300px;
+                                overflow: hidden;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                margin-bottom: 20px;
+                                img {
+                                    width: 200%;
+                                }
+                            }
+                            .txt-box {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                justify-content: center;
+                                span.name {
+                                    font-family: $kr-font;
+                                    font-size: 20px;
+                                    font-weight: 700;
+                                    letter-spacing: -.08px;
+                                    color: $font-black;
+                                    margin-bottom: 6px;
+                                }
+                                span.job {
+                                    font-family: $en-font;
+                                    font-weight: 500;
+                                    font-size: 16px;
+                                    color: $font-gray;
+                                    margin-bottom: 20px;
+                                }
+                                a.pdf-btn {
+                                    display: block;
+                                    border-radius: 12px;
+                                    padding: 8px 40px;
+                                    background: $font-black;
+                                    color: #fff;
+                                    font-family: $kr-font;
+                                    font-size: 16px;
+                                    font-weight: 700;
+                                    letter-spacing: -.08px;
+                                }
+                            }
+                        }
+                    }
+                    .right {
+                        width: 507px;
+                        height: 100%;
+                        // border: 1px solid red;
+                        background: #fff;
+                        border-radius: 30px;
+                        overflow: hidden;
+                        position: relative;
+                        .bg-area {
                             display: flex;
                             align-items: center;
                             justify-content: flex-start;
-                            li {
-                                font-family: $en-font;
-                                font-weight: 300;
-                                font-size: 20px;
-                                letter-spacing: -.08px;
-                                color: #fff;
-                                cursor: pointer;
+                            img {
+                                width: auto;
+                                height: 100%;
+                                opacity: .4;
                             }
-                            li:hover,
-                            li.active {
-                                color: #fff;
-                                font-weight: 500;
-                                transition: all .4s;
-                            }
-                            li:not(:last-child) {
-                                margin-right: 60px;
+                        }
+                        .info-box {
+                            width: 100%;
+                            height: 100%;
+                            #info-slider {
+                                width: 100%;
+                                height: 100%;
+                                .swiper-slide {
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    justify-content: flex-start;
+                                    .title {
+                                        width: 60%;
+                                        text-align: center;
+                                        font-family: $en-font;
+                                        font-size: 28px;
+                                        line-height: 1;
+                                        font-weight: 700;
+                                        letter-spacing: -.08px;
+                                        color: $font-black;
+                                        padding: 30px 0;
+                                        border-bottom: 1px solid $font-gray;
+                                        margin-bottom: 20px;
+                                    }
+                                    ul {
+                                        display: flex;
+                                        flex-direction: column;
+                                        flex-wrap: wrap;
+                                        li {
+                                            display: flex;
+                                            flex-direction: column;
+                                            align-items: center;
+                                            justify-content: center;
+                                            .date{
+                                                font-family: $en-font;
+                                                font-weight: 300;
+                                                font-size: 14px;
+                                                line-height: 1.2;
+                                                letter-spacing: -.08px;
+                                                color: $font-gray;
+                                            }
+                                            .name{
+                                                font-family: $kr-font;
+                                                font-weight: 600;
+                                                font-size: 18px;
+                                                line-height: 1.2;
+                                                color: $font-black;
+                                                margin: 4px 0;
+                                            }
+                                            .sub-name{
+                                                font-family: $kr-font;
+                                                font-weight: 500;
+                                                font-size: 14px;
+                                                line-height: 1;
+                                                letter-spacing: -.08px;
+                                                color: #a3a3a3;
+                                            }
+                                        }
+                                        li:not(:last-child){
+                                            margin-bottom: 20px;
+                                        }
+                                    }
+                                    ul.skill-box {
+                                        width: 60%;
+                                        li {
+                                            width: 100%;
+                                            .name{
+                                                margin: 0 0 20px 0;
+                                            }
+                                            ul.skill-list {
+                                                display: flex;
+                                                align-items: center;
+                                                justify-content: center;
+                                                flex-direction: row;
+                                                width: 100%;
+                                                li{
+                                                    width: 60px;
+                                                    img {
+                                                        width: 100%;
+                                                    }
+                                                }
+                                                li:not(:last-child) {
+                                                    margin: 0 20px 0 0;
+                                                }
+                                            }
+                                        }
+                                        li:not(:last-child) {
+                                            margin-bottom: 34px;
+                                        }
+                                    }
+                                }
+                                .swiper-button-next, .swiper-button-prev{
+                                    --swiper-navigation-size: 22px;
+                                    --swiper-theme-color: $font-black;
+                                    opacity: .4;
+                                    transition: all .4s;
+                                }
+                                .swiper-button-next:hover, .swiper-button-prev:hover{
+                                    opacity: 1;
+                                }
+                                .swiper-button-next {
+                                    right: 20px;
+                                }
+                                .swiper-button-prev {
+                                    left: 20px;
+                                }
                             }
                         }
                     }
                 }
 
-                .work-slide-box.active {
-                    display: block;
-                }
-                .work-slide-box {
+                /* about-bottom-area */
+                .about-bottom-area {
                     width: 100%;
-                    display: none;
-                    .category-slider {
-                        width: 100%;
-                        height: 505px;
-                        .swiper-slide {
-                            width: 505px;
-                            height: 100%;
-                            border-radius: 30px;
-                            overflow: hidden;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            .bg-area {
-                                img {
-                                    position: unset;
-                                }
-                            }
-                            .desc {
-                                position: relative;
-                                z-index: 2;
-                                width: 100%;
-                                height: 100%;
-                                padding: 30px 30px;
-                                display: flex;
-                                flex-direction: column;
-                                align-items: flex-start;
-                                justify-content: flex-end;
-                                .title {
-                                    font-family: $en-font;
-                                    font-weight: 800;
-                                    font-size: 28px;
-                                    letter-spacing: -.08px;
-                                    color: #fff;
-                                    margin-bottom: 10px;
-                                }
-                                p {
-                                    font-family: $kr-font;
-                                    font-weight: 700;
-                                    font-size: 28px;
-                                    letter-spacing: -.08px;
-                                    color: #fff;
-                                }
-                            }
-                            .long.desc {
-                                display: none;
-                                align-items: center;
-                                justify-content: center;
-                            }
-                        }
-                        .swiper-slide .bg-area::after {
-                            content: '';
-                            position: absolute;
-                            display: block;
+                    height: 243px;
+                    // border: 1px solid red;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    .call-box,
+                    .email-box {
+                        width: 243px;
+                        height: 100%;
+                        background: #fff;
+                        border-radius: 30px;
+                        .img-box {
                             width: 100%;
                             height: 100%;
-                            background: rgba(0, 0, 0, .6);
-                            opacity: 0;
-                            transition: all .4s;
+                            a {
+                                width: 100%;
+                                height: 100%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                img {
+                                    width: 33%;
+                                }
+                            }
                         }
-                        .swiper-slide:hover .bg-area::after {
-                            opacity: 1;
+                    }
+
+                    .comment-box {
+                        width: 769px;
+                        height: 100%;
+                        background: #fff;
+                        border-radius: 30px;
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 0 79px;
+                        .bg-area{
                         }
-                        .swiper-slide:hover .shot.desc {
-                            display: none;
+                        p {
+                            position: relative;
+                            z-index: 2;
+                            font-family: $kr-font;
+                            font-weight: 400;
+                            font-size: 18px;
+                            line-height: 1.6;
+                            letter-spacing: -.08px;
                         }
-                        .swiper-slide:hover .long.desc {
-                            display: flex;
+                    }
+
+                    .hobby-box {
+                        width: 243px;
+                        height: 100%;
+                        background: #fff;
+                        border-radius: 30px;
+                        overflow: hidden;
+                        #hobby-slider {
+                            width: 100%;
+                            height: 100%;
+                            .swiper-wrapper {
+                                .swiper-slide {
+                                    .img-box{
+                                        width: 100%;
+                                        height: 100%;
+                                        padding: 0 30px;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        img{
+                                            width: 100%;
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                 }
+            }
+        }
+
+        /**** work ****/
+        .section.work {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background: #78B866;
+            .bg-area {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                img{
+                    width: 100%;
+                    position: absolute;
+                    top: -100vh;
+                }
+            }
+            .work-container {
+                width: 100%;
             }
         }
     }
