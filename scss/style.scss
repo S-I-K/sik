@@ -39,9 +39,12 @@ $main-color: #C8F3FA;
 // $sub-color: #;
 $kr-font: 'SUIT', sans-serif;
 $en-font: 'Montserrat', sans-serif;
-$font-black: #2D313D;
+$font-black: #252525;
 $font-gray: #BCBCBC;
 
+:root {
+    --swiper-navigation-size: 20px !important;
+}
 
 /* animation */
 @keyframes scale {
@@ -78,6 +81,7 @@ header {
     padding: 30px 0;
     transition: all .4s;
     /* display: none; */ /* 다 작업하고 지우면 됨 */
+    pointer-events: none;
     .logo-area {
         a.logo {
             display: flex;
@@ -609,8 +613,139 @@ header {
                     top: -100vh;
                 }
             }
-            .work-container {
+            .work-slide-wrap {
                 width: 100%;
+                height: 100%;
+                #work-slider {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    .swiper-wrapper {
+                        height: 500px;
+                        .swiper-slide {
+                            width: 500px;
+                            height: 100%;
+                            // border: 1px solid red;
+                            position: relative;
+                            border-radius: 24px;
+                            overflow: hidden;
+                            a {
+                                box-sizing: border-box;
+                                border: solid #2D382A;
+                                border-width: 0;
+                                border-radius: 24px;
+                                transition: .4s all ease;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                justify-content: center;
+                                width: 100%;
+                                height: 100%;
+                                .work-thumb-img-box {
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    width: 100%;
+                                    height: 100%;
+                                    z-index: -1;
+                                    img {
+                                        width: 100%;
+                                    }
+                                }
+                                .work-title-box {
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    justify-content: center;
+                                    span {
+                                        font-family: $kr-font;
+                                        font-weight: 400;
+                                        font-size: 18px;
+                                        letter-spacing: -.8px;
+                                        color: $font-black;
+                                    }
+                                    h3 {
+                                        font-family: $kr-font;
+                                        font-weight: 900;
+                                        font-size: 30px;
+                                        letter-spacing: -.8px;
+                                        color: $font-black;
+                                    }
+                                }
+                                .work-btn-box {
+                                    position: relative;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    margin-top: 30px;
+                                    ul.work-btn-bg {
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        li {
+                                            // border: 1px solid red;
+                                            border-radius: 300px;
+                                            width: 60px;
+                                            height: 60px;
+                                            background: #657860;
+                                            transition: .4s all ease;
+                                        }
+                                        li:not(:last-child) {
+                                            margin-right: -20px;
+                                        }
+                                    }
+                                    .work-btn-txt {
+                                        position: absolute;
+                                        span {
+                                            font-family: $kr-font;
+                                            font-weight: 700;
+                                            font-size: 18px;
+                                            line-height: -.8px;
+                                            color: #fff;
+                                        }
+                                    }
+                                }
+                            }
+                            a:hover {
+                                border-width: 12px;
+                                .work-btn-box {
+                                    ul.work-btn-bg {
+                                        li {
+                                            background: #2D382A;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .work-pagination-box.container {
+                        height: auto;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
+                        position: absolute;
+                        bottom: 120px;
+                        .swiper-pagination-progressbar {
+                            position: unset;
+                        }
+                        .swiper-button-next{
+                            position: unset;
+                            margin: 0;
+                        }
+                        .swiper-button-next:after {
+                        }
+                        .swiper-button-prev {
+                            position: unset;
+                            margin: 0;
+                        }
+                        .swiper-button-prev:after {
+                        }
+                    }
+                }
             }
         }
     }

@@ -1,6 +1,7 @@
 /**** jquery ****/
 $(()=>{
 
+  /* wrap swiper */
   var swiper = new Swiper("#wrap-slide", {
     direction: "vertical",
     mousewheel: true,
@@ -76,6 +77,7 @@ var time_weather_swiper = new Swiper("#time-weather-slider", {
   },
 });
 
+/* info swiper */
 var info_swiper = new Swiper("#info-slider", {
   loop: true,
   navigation: {
@@ -84,6 +86,7 @@ var info_swiper = new Swiper("#info-slider", {
   },
 });
 
+/* hobby swiper */
 var hobby_swiper = new Swiper("#hobby-slider", {
   loop: true,
   autoplay: {
@@ -95,9 +98,20 @@ var hobby_swiper = new Swiper("#hobby-slider", {
   },
 });
 
-var swiper = new Swiper("#work-slider", {
-    slidesPerView: 'auto',
-    spaceBetween: 200,
-    centeredSlides: true,
-    loop: true,
+/* work swiper */
+var work_swiper = new Swiper("#work-slider", {
+  
+  slidesPerView: "auto",
+  spaceBetween: 30,
+  centeredSlides: true,
+  loop: true,
+
+  pagination: {
+    el: ".swiper-pagination.work-pagination",
+    type: "progressbar",
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });

@@ -44,6 +44,10 @@ li {
 }
 
 /* variable */
+:root {
+  --swiper-navigation-size: 20px !important;
+}
+
 /* animation */
 @keyframes scale {
   0% {
@@ -76,6 +80,7 @@ header {
   padding: 30px 0;
   transition: all 0.4s;
   /* display: none; */ /* 다 작업하고 지우면 됨 */
+  pointer-events: none;
 }
 header .logo-area a.logo {
   display: flex;
@@ -256,7 +261,7 @@ header .logo-area a.logo img {
   font-size: 18px;
   line-height: 18px;
   letter-spacing: -0.8px;
-  color: #2D313D;
+  color: #252525;
   display: block;
   text-align: center;
   margin-bottom: 8px;
@@ -271,13 +276,13 @@ header .logo-area a.logo img {
   font-size: 62px;
   line-height: 62px;
   letter-spacing: -0.8px;
-  color: #2D313D;
+  color: #252525;
 }
 #wrap #wrap-slide .section.about .container .about-top-area .center .time-weather-box #time-weather-slider .swiper-pagination-bullet {
-  background: #2D313D;
+  background: #252525;
 }
 #wrap #wrap-slide .section.about .container .about-top-area .center .time-weather-box #time-weather-slider .swiper-pagination-bullet-active {
-  background: #2D313D;
+  background: #252525;
 }
 #wrap #wrap-slide .section.about .container .about-top-area .center .time-weather-box .weather-ob {
   position: absolute;
@@ -341,7 +346,7 @@ header .logo-area a.logo img {
   font-size: 20px;
   font-weight: 700;
   letter-spacing: -0.8px;
-  color: #2D313D;
+  color: #252525;
   margin-bottom: 6px;
 }
 #wrap #wrap-slide .section.about .container .about-top-area .center .profile-box .txt-box span.job {
@@ -355,7 +360,7 @@ header .logo-area a.logo img {
   display: block;
   border-radius: 12px;
   padding: 8px 40px;
-  background: #2D313D;
+  background: #252525;
   color: #fff;
   font-family: "SUIT", sans-serif;
   font-size: 16px;
@@ -402,7 +407,7 @@ header .logo-area a.logo img {
   line-height: 1;
   font-weight: 700;
   letter-spacing: -0.8px;
-  color: #2D313D;
+  color: #252525;
   padding: 30px 0;
   border-bottom: 1px solid #BCBCBC;
   margin-bottom: 20px;
@@ -424,14 +429,14 @@ header .logo-area a.logo img {
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: -0.8px;
-  color: #2D313D;
+  color: #252525;
 }
 #wrap #wrap-slide .section.about .container .about-top-area .right .info-box #info-slider .swiper-slide ul li .name {
   font-family: "SUIT", sans-serif;
   font-weight: 600;
   font-size: 18px;
   line-height: 1.2;
-  color: #2D313D;
+  color: #252525;
   margin: 4px 0;
 }
 #wrap #wrap-slide .section.about .container .about-top-area .right .info-box #info-slider .swiper-slide ul li .sub-name {
@@ -583,6 +588,127 @@ header .logo-area a.logo img {
   position: absolute;
   top: -100vh;
 }
-#wrap #wrap-slide .section.work .work-container {
+#wrap #wrap-slide .section.work .work-slide-wrap {
   width: 100%;
+  height: 100%;
+}
+#wrap #wrap-slide .section.work .work-slide-wrap #work-slider {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#wrap #wrap-slide .section.work .work-slide-wrap #work-slider .swiper-wrapper {
+  height: 500px;
+}
+#wrap #wrap-slide .section.work .work-slide-wrap #work-slider .swiper-wrapper .swiper-slide {
+  width: 500px;
+  height: 100%;
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+}
+#wrap #wrap-slide .section.work .work-slide-wrap #work-slider .swiper-wrapper .swiper-slide a {
+  box-sizing: border-box;
+  border: solid #2D382A;
+  border-width: 0;
+  border-radius: 24px;
+  transition: 0.4s all ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+#wrap #wrap-slide .section.work .work-slide-wrap #work-slider .swiper-wrapper .swiper-slide a .work-thumb-img-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+#wrap #wrap-slide .section.work .work-slide-wrap #work-slider .swiper-wrapper .swiper-slide a .work-thumb-img-box img {
+  width: 100%;
+}
+#wrap #wrap-slide .section.work .work-slide-wrap #work-slider .swiper-wrapper .swiper-slide a .work-title-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#wrap #wrap-slide .section.work .work-slide-wrap #work-slider .swiper-wrapper .swiper-slide a .work-title-box span {
+  font-family: "SUIT", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: -0.8px;
+  color: #252525;
+}
+#wrap #wrap-slide .section.work .work-slide-wrap #work-slider .swiper-wrapper .swiper-slide a .work-title-box h3 {
+  font-family: "SUIT", sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+  letter-spacing: -0.8px;
+  color: #252525;
+}
+#wrap #wrap-slide .section.work .work-slide-wrap #work-slider .swiper-wrapper .swiper-slide a .work-btn-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+#wrap #wrap-slide .section.work .work-slide-wrap #work-slider .swiper-wrapper .swiper-slide a .work-btn-box ul.work-btn-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#wrap #wrap-slide .section.work .work-slide-wrap #work-slider .swiper-wrapper .swiper-slide a .work-btn-box ul.work-btn-bg li {
+  border-radius: 300px;
+  width: 60px;
+  height: 60px;
+  background: #657860;
+  transition: 0.4s all ease;
+}
+#wrap #wrap-slide .section.work .work-slide-wrap #work-slider .swiper-wrapper .swiper-slide a .work-btn-box ul.work-btn-bg li:not(:last-child) {
+  margin-right: -20px;
+}
+#wrap #wrap-slide .section.work .work-slide-wrap #work-slider .swiper-wrapper .swiper-slide a .work-btn-box .work-btn-txt {
+  position: absolute;
+}
+#wrap #wrap-slide .section.work .work-slide-wrap #work-slider .swiper-wrapper .swiper-slide a .work-btn-box .work-btn-txt span {
+  font-family: "SUIT", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: -0.8px;
+  color: #fff;
+}
+#wrap #wrap-slide .section.work .work-slide-wrap #work-slider .swiper-wrapper .swiper-slide a:hover {
+  border-width: 12px;
+}
+#wrap #wrap-slide .section.work .work-slide-wrap #work-slider .swiper-wrapper .swiper-slide a:hover .work-btn-box ul.work-btn-bg li {
+  background: #2D382A;
+}
+#wrap #wrap-slide .section.work .work-slide-wrap #work-slider .work-pagination-box.container {
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 120px;
+}
+#wrap #wrap-slide .section.work .work-slide-wrap #work-slider .work-pagination-box.container .swiper-pagination-progressbar {
+  position: unset;
+}
+#wrap #wrap-slide .section.work .work-slide-wrap #work-slider .work-pagination-box.container .swiper-button-next {
+  position: unset;
+  margin: 0;
+}
+#wrap #wrap-slide .section.work .work-slide-wrap #work-slider .work-pagination-box.container .swiper-button-prev {
+  position: unset;
+  margin: 0;
 }
