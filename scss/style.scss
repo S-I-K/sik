@@ -760,15 +760,23 @@ header {
                                 background: #2D382A;
                             }
                         }
+                        .navigation-box {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            width: 8%;
+                        }
                         .swiper-button-next{
                             position: unset;
                             margin: 0;
+                            color: #2D382A
                         }
                         .swiper-button-next:after {
                         }
                         .swiper-button-prev {
                             position: unset;
                             margin: 0;
+                            color: #2D382A
                         }
                         .swiper-button-prev:after {
                         }
