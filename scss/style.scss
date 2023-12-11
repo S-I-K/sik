@@ -33,12 +33,19 @@ li {
 .mt20 {
     margin-top: 20px !important;
 }
+.glass-effect {
+    border: 1px solid rgba(255, 255, 255, .4) !important;
+    background: linear-gradient(139deg, rgba(255, 255, 255, 0.50) 22.95%, rgba(255, 255, 255, 0.15) 81.95%) !important;
+    box-shadow: 0px 4px 30px 0px rgba(255, 255, 255, 0.15) !important;
+    backdrop-filter: blur(30px) !important;
+}
 
 /* variable */
 $main-color: #C8F3FA;
 // $sub-color: #;
 $kr-font: 'SUIT', sans-serif;
 $en-font: 'Montserrat', sans-serif;
+$font-white: #fff;
 $font-black: #252525;
 $font-gray: #BCBCBC;
 
@@ -632,6 +639,9 @@ header {
                             position: relative;
                             border-radius: 24px;
                             overflow: hidden;
+                            opacity: .6;
+                            transition: .4s opacity ease;
+                            background: #fff;
                             a {
                                 box-sizing: border-box;
                                 border: solid #2D382A;
@@ -667,12 +677,18 @@ header {
                                         letter-spacing: -.8px;
                                         color: $font-black;
                                     }
+                                    span.font-white {
+                                        color: $font-white;
+                                    }
                                     h3 {
                                         font-family: $kr-font;
                                         font-weight: 900;
                                         font-size: 30px;
                                         letter-spacing: -.8px;
                                         color: $font-black;
+                                    }
+                                    h3.font-white {
+                                        color: $font-white;
                                     }
                                 }
                                 .work-btn-box {
@@ -720,17 +736,29 @@ header {
                                 }
                             }
                         }
+                        .swiper-slide-active,
+                        .swiper-slide-prev,
+                        .swiper-slide-next {
+                            opacity: 1;
+                        }
                     }
                     .work-pagination-box.container {
                         height: auto;
                         display: flex;
                         flex-direction: row;
                         align-items: center;
-                        justify-content: center;
+                        justify-content: space-between;
                         position: absolute;
                         bottom: 120px;
                         .swiper-pagination-progressbar {
                             position: unset;
+                            background: rgba(255, 255, 255, .2);
+                            width: 90%;
+                            height: 2px;
+                            
+                            .swiper-pagination-progressbar-fill  {
+                                background: #2D382A;
+                            }
                         }
                         .swiper-button-next{
                             position: unset;
