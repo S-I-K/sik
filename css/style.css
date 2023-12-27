@@ -331,7 +331,7 @@ header .logo-area a.logo img {
   justify-content: center;
 }
 #wrap #wrap-slide .section.about .container .about-top-area .center .profile-box .profile-img {
-  width: 110px;
+  width: 200px;
   height: 110px;
   border-radius: 300px;
   overflow: hidden;
@@ -348,6 +348,7 @@ header .logo-area a.logo img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  display: none;
 }
 #wrap #wrap-slide .section.about .container .about-top-area .center .profile-box .txt-box span.name {
   font-family: "SUIT", sans-serif;
