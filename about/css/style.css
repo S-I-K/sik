@@ -9,7 +9,7 @@ body::-webkit-scrollbar {
 }
 #wrap section.video-content-wrap {
   width: 100%;
-  height: auto;
+  height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
@@ -17,11 +17,11 @@ body::-webkit-scrollbar {
 }
 #wrap section.video-content-wrap .background-video-box {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 #wrap section.video-content-wrap .background-video-box .video-box {
   width: 100%;
-  height: auto;
+  height: 100%;
   aspect-ratio: 1920/1080;
   display: flex;
   align-items: center;
@@ -29,7 +29,9 @@ body::-webkit-scrollbar {
 }
 #wrap section.video-content-wrap .background-video-box .video-box video {
   width: 100%;
-  height: auto;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 #wrap section.video-content-wrap .background-video-box .screen-box {
   background: #000;
