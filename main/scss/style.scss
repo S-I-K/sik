@@ -155,6 +155,9 @@ body::-webkit-scrollbar {
                         color: #fff;
                         text-align: right;
                     }
+                    p.desc.bold {
+                        font-weight: 700;
+                    }
                     p.desc:not(:last-child) {
                         margin-bottom: 14px;
                     }

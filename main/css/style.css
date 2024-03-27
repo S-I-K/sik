@@ -149,6 +149,9 @@ body::-webkit-scrollbar {
   color: #fff;
   text-align: right;
 }
+#wrap section.main-content-wrap .intro-text-box .container .para-desc-box p.desc.bold {
+  font-weight: 700;
+}
 #wrap section.main-content-wrap .intro-text-box .container .para-desc-box p.desc:not(:last-child) {
   margin-bottom: 14px;
 }
