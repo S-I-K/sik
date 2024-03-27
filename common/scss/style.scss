@@ -54,3 +54,17 @@ section {
     transform: translateY(-100%);
     transform-origin: 0% 0%;
 }
+
+/* title.circle */
+.title.circle {
+    position: relative;
+}
+.title.circle::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border-radius: 300px;
+}

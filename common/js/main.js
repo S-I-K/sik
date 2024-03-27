@@ -31,4 +31,24 @@ $(()=>{
             $('.burger-box').removeClass('active');
         }
     });
+
+    /* gsap effect */
+    gsap.registerPlugin(ScrollTrigger);
+    $fade_up = gsap.utils.toArray('.gsap-fade-up');
+    $fade_up.forEach(el => {
+        gsap.to(el, {
+            'transform': 'translateY(0px)',
+            'opacity': 1,
+            'duration': 2,
+            'ease': 'ease',
+            scrollTrigger: {
+                markers: false,
+                trigger: el,
+                start: '-20% 100%',
+                end: 'top 70%',
+                scrub: 2,
+                // toggleClass: 'active',
+            }
+        })
+    });
 });
