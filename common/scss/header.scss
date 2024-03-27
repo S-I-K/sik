@@ -1,0 +1,103 @@
+/* variable css */
+$font-kr: "Poppins", sans-serif;
+$font-en: "Pretendard Variable";
+$color-black: #2a2a2a;
+$color-main: #fff;
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .container {
+        // border: 1px solid red;
+        padding: 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .logo-box {
+            width: auto;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            a {
+                width: auto;
+                height: 100%;
+                img {
+                    width: auto;
+                    height: 100%;
+                }
+            }
+        }
+        .menu-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            a.menu-btn {
+                width: 40px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 8px;
+                span {
+                    color: #fff;
+                    font-family: $font-en;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 1;
+                }
+            }
+            a.menu-btn.button-effect::after {
+                color: #fff;
+                font-family: $font-en;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 1;
+            }
+            .burger-wrap {
+                // border: 1px solid red;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                a.burger-box {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    width: 16px;
+                    height: 22px;
+                    position: relative;
+                    span {
+                        position: absolute;
+                        display: block;
+                        width: 100%;
+                        height: 2px;
+                        background: #fff;
+                    }
+                    span:nth-child(1) {
+                        top: 6px;
+                    }
+                    span:nth-child(2) {
+                        bottom: 6px;
+                    }
+                }
+            }
+        }
+        .menu-box:hover {
+            .button-effect {
+                transform: translateY(-100%);
+                transform-origin: 0% 0%;
+            }
+        }
+    }
+}

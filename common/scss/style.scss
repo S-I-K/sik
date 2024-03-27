@@ -1,3 +1,9 @@
+/* variable css */
+$font-kr: "Poppins", sans-serif;
+$font-en: "Pretendard Variable";
+$color-black: #2a2a2a;
+$color-main: #fff;
+
 /* commons */
 * {
     margin: 0;
@@ -29,4 +35,22 @@ section {
 .gsap-fade-up {
     transform: translateY(44px);
     opacity: 0;
+}
+
+.button-effect {
+    position: relative;
+    transition: all .4s ease;
+}
+.button-effect::after {
+    content: attr(data-hover);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 100%;
+    height: 100%;
+}
+.button-effect:hover {
+    transform: translateY(-100%);
+    transform-origin: 0% 0%;
 }

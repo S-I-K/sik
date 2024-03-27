@@ -1,3 +1,4 @@
+/* variable css */
 /* commons */
 * {
   margin: 0;
@@ -32,4 +33,24 @@ section {
 .gsap-fade-up {
   transform: translateY(44px);
   opacity: 0;
+}
+
+.button-effect {
+  position: relative;
+  transition: all 0.4s ease;
+}
+
+.button-effect::after {
+  content: attr(data-hover);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 100%;
+  height: 100%;
+}
+
+.button-effect:hover {
+  transform: translateY(-100%);
+  transform-origin: 0% 0%;
 }
