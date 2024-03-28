@@ -57,21 +57,21 @@ body::-webkit-scrollbar {
   border-bottom: 1px solid #fff;
   padding-bottom: 100px;
 }
-#wrap section.main-content-wrap .intro-text-box {
+#wrap section.main-content-wrap section.intro-content-wrap {
   width: 100%;
   height: auto;
 }
-#wrap section.main-content-wrap .intro-text-box .container {
+#wrap section.main-content-wrap section.intro-content-wrap .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
 }
-#wrap section.main-content-wrap .intro-text-box .container .title-box {
+#wrap section.main-content-wrap section.intro-content-wrap .container .section-title-box {
   margin-bottom: 260px;
 }
-#wrap section.main-content-wrap .intro-text-box .container .title-box h1.title {
-  font-family: "Pretendard Variable";
+#wrap section.main-content-wrap section.intro-content-wrap .container .section-title-box h1.title {
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 120px;
   line-height: 1;
@@ -81,58 +81,92 @@ body::-webkit-scrollbar {
   word-break: keep-all;
   white-space: pre-line;
 }
-#wrap section.main-content-wrap .intro-text-box .container .title-box h1.title.circle::after {
+#wrap section.main-content-wrap section.intro-content-wrap .container .section-title-box h1.title.circle::after {
   right: -5%;
   bottom: 15%;
   background: #fff;
 }
-#wrap section.main-content-wrap .intro-text-box .container .para-title-box {
+#wrap section.main-content-wrap section.intro-content-wrap .container .about-title-box {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   width: 100%;
-  margin-bottom: 50px;
+  margin-bottom: 120px;
 }
-#wrap section.main-content-wrap .intro-text-box .container .para-title-box .sub-text {
+#wrap section.main-content-wrap section.intro-content-wrap .container .about-title-box .sub-text {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   margin-bottom: 40px;
 }
-#wrap section.main-content-wrap .intro-text-box .container .para-title-box .sub-text span {
-  font-family: "Pretendard Variable";
+#wrap section.main-content-wrap section.intro-content-wrap .container .about-title-box .sub-text span {
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 1;
   color: #fff;
 }
-#wrap section.main-content-wrap .intro-text-box .container .para-title-box .sub-text span.line {
+#wrap section.main-content-wrap section.intro-content-wrap .container .about-title-box .sub-text span.line {
   display: block;
   width: 256px;
   height: 1px;
   background: #fff;
   margin: 0 24px;
 }
-#wrap section.main-content-wrap .intro-text-box .container .para-title-box .sub-text span.circle {
+#wrap section.main-content-wrap section.intro-content-wrap .container .about-title-box .sub-text span.circle {
   display: block;
   width: 14px;
   height: 14px;
   background: #2EAADD;
   border-radius: 300px;
 }
-#wrap section.main-content-wrap .intro-text-box .container .para-title-box h2.title {
-  font-family: "Poppins", sans-serif;
+#wrap section.main-content-wrap section.intro-content-wrap .container .about-title-box h2.title {
+  font-family: "Pretendard Variable";
   font-weight: 700;
   font-size: 58px;
   line-height: 1.2;
-  letter-spacing: -2px;
+  letter-spacing: -4px;
   color: #fff;
   text-align: left;
   word-break: keep-all;
-  margin-bottom: 120px;
+  margin-bottom: 24px;
 }
-#wrap section.main-content-wrap .intro-text-box .container .para-desc-box {
+#wrap section.main-content-wrap section.intro-content-wrap .container .about-title-box a.read-more-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+#wrap section.main-content-wrap section.intro-content-wrap .container .about-title-box a.read-more-button span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: 40px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: -0.8px;
+  color: #fff;
+  margin-right: 12px;
+}
+#wrap section.main-content-wrap section.intro-content-wrap .container .about-title-box a.read-more-button .icon-box {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#wrap section.main-content-wrap section.intro-content-wrap .container .about-title-box a.read-more-button .icon-box img {
+  width: 7px;
+}
+#wrap section.main-content-wrap section.intro-content-wrap .container .about-title-box .read-more-button:hover span {
+  transform: translateY(-100%);
+  transform-origin: 0% 0%;
+}
+#wrap section.main-content-wrap section.intro-content-wrap .container .about-desc-box {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -140,18 +174,47 @@ body::-webkit-scrollbar {
   justify-content: center;
   position: relative;
 }
-#wrap section.main-content-wrap .intro-text-box .container .para-desc-box p.desc {
-  font-family: "Poppins", sans-serif;
+#wrap section.main-content-wrap section.intro-content-wrap .container .about-desc-box p {
+  font-family: "Pretendard Variable";
   font-weight: 300;
   font-size: 18px;
-  line-height: 1.4;
+  line-height: 1.5;
   letter-spacing: -2px;
   color: #fff;
   text-align: right;
 }
-#wrap section.main-content-wrap .intro-text-box .container .para-desc-box p.desc.bold {
+#wrap section.main-content-wrap section.intro-content-wrap .container .about-desc-box p.bold {
   font-weight: 700;
 }
-#wrap section.main-content-wrap .intro-text-box .container .para-desc-box p.desc:not(:last-child) {
-  margin-bottom: 14px;
+#wrap section.main-content-wrap section.intro-content-wrap .container .about-desc-box p:not(:last-child) {
+  margin-bottom: 34px;
+}
+#wrap section.main-content-wrap section.recent-content-wrap {
+  width: 100%;
+  height: auto;
+}
+#wrap section.main-content-wrap section.recent-content-wrap .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+#wrap section.main-content-wrap section.recent-content-wrap .container .section-title-box {
+  margin-bottom: 260px;
+}
+#wrap section.main-content-wrap section.recent-content-wrap .container .section-title-box h1.title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 120px;
+  line-height: 1;
+  letter-spacing: -2px;
+  text-align: center;
+  color: #fff;
+  word-break: keep-all;
+  white-space: pre-line;
+}
+#wrap section.main-content-wrap section.recent-content-wrap .container .section-title-box h1.title.circle::after {
+  right: -7%;
+  bottom: 15%;
+  background: #fff;
 }

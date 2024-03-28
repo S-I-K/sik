@@ -47,14 +47,14 @@ header .container .menu-box a.menu-btn {
 }
 header .container .menu-box a.menu-btn span {
   color: #fff;
-  font-family: "Pretendard Variable";
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 1;
 }
 header .container .menu-box a.menu-btn.button-effect::after {
   color: #fff;
-  font-family: "Pretendard Variable";
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 1;

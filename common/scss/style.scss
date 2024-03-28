@@ -1,6 +1,6 @@
 /* variable css */
-$font-kr: "Poppins", sans-serif;
-$font-en: "Pretendard Variable";
+$font-kr: "Pretendard Variable";
+$font-en: "Poppins", sans-serif;
 $color-black: #2a2a2a;
 $color-main: #fff;
 
@@ -38,6 +38,7 @@ section {
 }
 
 .button-effect {
+    display: flex;
     position: relative;
     transition: all .4s ease;
 }
@@ -67,4 +68,23 @@ section {
     height: 30px;
     background: #fff;
     border-radius: 300px;
+}
+
+/* section-title-box */
+.section-title-box {
+    margin-bottom: 260px;
+    h1.title {
+        font-family: $font-en;
+        font-weight: 700;
+        font-size: 120px;
+        line-height: 1;
+        letter-spacing: -2px;
+        text-align: center;
+        color: #fff;
+        word-break: keep-all;
+        white-space: pre-line;
+    }
+    h1.title.circle::after {
+        background: #fff;
+    }
 }
