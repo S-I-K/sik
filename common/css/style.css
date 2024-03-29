@@ -56,29 +56,15 @@ section {
   transform-origin: 0% 0%;
 }
 
-/* title.circle */
-.title.circle {
-  position: relative;
-}
-
-.title.circle::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 30px;
-  height: 30px;
-  background: #fff;
-  border-radius: 300px;
-}
-
 /* section-title-box */
 .section-title-box {
   margin-bottom: 260px;
+  /* title.circle */
 }
 .section-title-box h1.title {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
-  font-size: 120px;
+  font-size: 180px;
   line-height: 1;
   letter-spacing: -2px;
   text-align: center;
@@ -87,5 +73,20 @@ section {
   white-space: pre-line;
 }
 .section-title-box h1.title.circle::after {
+  background: #fff;
+}
+.section-title-box .title.circle {
+  position: relative;
+}
+.section-title-box .title.circle::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 42px;
+  height: 42px;
+  background: #fff;
+  border-radius: 300px;
+  right: -8%;
+  bottom: 7%;
   background: #fff;
 }

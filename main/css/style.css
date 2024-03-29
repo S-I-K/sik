@@ -47,7 +47,7 @@ body::-webkit-scrollbar {
   flex-direction: column;
   position: relative;
   z-index: 2;
-  padding-top: 88vh;
+  padding-top: 82vh;
   width: 100%;
 }
 #wrap section.main-content-wrap section:not(:last-child) {
@@ -66,25 +66,6 @@ body::-webkit-scrollbar {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-}
-#wrap section.main-content-wrap section.intro-content-wrap .container .section-title-box {
-  margin-bottom: 260px;
-}
-#wrap section.main-content-wrap section.intro-content-wrap .container .section-title-box h1.title {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-size: 120px;
-  line-height: 1;
-  letter-spacing: -2px;
-  text-align: center;
-  color: #fff;
-  word-break: keep-all;
-  white-space: pre-line;
-}
-#wrap section.main-content-wrap section.intro-content-wrap .container .section-title-box h1.title.circle::after {
-  right: -5%;
-  bottom: 15%;
-  background: #fff;
 }
 #wrap section.main-content-wrap section.intro-content-wrap .container .about-title-box {
   display: flex;
@@ -199,22 +180,75 @@ body::-webkit-scrollbar {
   align-items: center;
   justify-content: flex-start;
 }
-#wrap section.main-content-wrap section.recent-content-wrap .container .section-title-box {
-  margin-bottom: 260px;
+#wrap section.main-content-wrap section.recent-content-wrap .container .work-list-wrap {
+  width: 100%;
 }
-#wrap section.main-content-wrap section.recent-content-wrap .container .section-title-box h1.title {
+#wrap section.main-content-wrap section.recent-content-wrap .container .work-list-wrap .work-list-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 0;
+}
+#wrap section.main-content-wrap section.recent-content-wrap .container .work-list-wrap .work-list-box .work-title-box {
+  flex: 1;
+}
+#wrap section.main-content-wrap section.recent-content-wrap .container .work-list-wrap .work-list-box .work-title-box h2.title {
   font-family: "Poppins", sans-serif;
+  font-size: 58px;
   font-weight: 700;
-  font-size: 120px;
   line-height: 1;
   letter-spacing: -2px;
-  text-align: center;
   color: #fff;
-  word-break: keep-all;
-  white-space: pre-line;
+  position: relative;
 }
-#wrap section.main-content-wrap section.recent-content-wrap .container .section-title-box h1.title.circle::after {
-  right: -7%;
-  bottom: 15%;
+#wrap section.main-content-wrap section.recent-content-wrap .container .work-list-wrap .work-list-box .work-title-box h2.title span.date {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0px;
+  color: #fff;
+  position: absolute;
+  top: -22px;
+  left: 0;
+}
+#wrap section.main-content-wrap section.recent-content-wrap .container .work-list-wrap .work-list-box .work-title-box h2.title.kr {
+  font-family: "Pretendard Variable";
+}
+#wrap section.main-content-wrap section.recent-content-wrap .container .work-list-wrap .work-list-box .work-desc-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 2;
+}
+#wrap section.main-content-wrap section.recent-content-wrap .container .work-list-wrap .work-list-box .work-desc-box p {
+  font-family: "Pretendard Variable";
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.8px;
+  color: #fff;
+  margin-right: 40px;
+  flex: 1;
+  word-break: keep-all;
+}
+#wrap section.main-content-wrap section.recent-content-wrap .container .work-list-wrap .work-list-box .work-desc-box .button-box {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: #fff;
+  border-radius: 300px;
+  padding: 16px;
+}
+#wrap section.main-content-wrap section.recent-content-wrap .container .work-list-wrap .work-list-box .work-desc-box .button-box img {
+  height: 100%;
+}
+#wrap section.main-content-wrap section.recent-content-wrap .container .work-list-wrap .work-list-box:not(:last-child) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+#wrap section.main-content-wrap section.recent-content-wrap .container .work-list-wrap .work-list-box:first-child {
+  padding-top: 0;
 }

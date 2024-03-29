@@ -10,7 +10,6 @@ body::-webkit-scrollbar {
     width: 100%;
     height: auto;
     header {
-
     }
 
     section.video-content-wrap {
@@ -53,7 +52,7 @@ body::-webkit-scrollbar {
         flex-direction: column;
         position: relative;
         z-index: 2;
-        padding-top: 88vh;
+        padding-top: 82vh;
         width: 100%;
         .container {
             // max-width: 1000px;
@@ -75,22 +74,9 @@ body::-webkit-scrollbar {
                 align-items: center;
                 justify-content: flex-start;
                 .section-title-box {
-                    margin-bottom: 260px;
                     h1.title {
-                        font-family: $font-en;
-                        font-weight: 700;
-                        font-size: 120px;
-                        line-height: 1;
-                        letter-spacing: -2px;
-                        text-align: center;
-                        color: #fff;
-                        word-break: keep-all;
-                        white-space: pre-line;
                     }
                     h1.title.circle::after {
-                        right: -5%;
-                        bottom: 15%;
-                        background: #fff;
                     }
                 }
                 .about-title-box {
@@ -211,22 +197,86 @@ body::-webkit-scrollbar {
                 align-items: center;
                 justify-content: flex-start;
                 .section-title-box {
-                    margin-bottom: 260px;
                     h1.title {
-                        font-family: $font-en;
-                        font-weight: 700;
-                        font-size: 120px;
-                        line-height: 1;
-                        letter-spacing: -2px;
-                        text-align: center;
-                        color: #fff;
-                        word-break: keep-all;
-                        white-space: pre-line;
                     }
                     h1.title.circle::after {
-                        right: -7%;
-                        bottom: 15%;
-                        background: #fff;
+                    }
+                }
+
+                .work-list-wrap {
+                    width: 100%;
+                    .work-list-box {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 100px 0;
+                        // border: 1px solid red;
+                        .work-title-box {
+                            flex: 1;
+                            h2.title {
+                                font-family: $font-en;
+                                font-size: 58px;
+                                font-weight: 700;
+                                line-height: 1;
+                                letter-spacing: -2px;
+                                color: #fff;
+                                position: relative;
+                                span.date {
+                                    font-family: $font-en;
+                                    font-weight: 300;
+                                    font-size: 14px;
+                                    line-height: 1;
+                                    letter-spacing: -0px;
+                                    color: #fff;
+                                    position: absolute;
+                                    top: -22px;
+                                    left: 0;
+                                }
+                            }
+                            h2.title.kr {
+                                font-family: $font-kr;
+                            }
+                        }
+
+                        .work-desc-box {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            flex: 2;
+                            p {
+                                font-family: $font-kr;
+                                font-weight: 300;
+                                font-size: 16px;
+                                line-height: 1.5;
+                                letter-spacing: -.8px;
+                                color: #fff;
+                                margin-right: 40px;
+                                flex: 1;
+                                word-break: keep-all;
+                            }
+                            .button-box {
+                                width: 45px;
+                                height: 45px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                // border: 1px solid #fff;
+                                background: #fff;
+                                border-radius: 300px;
+                                padding: 16px;
+                                img {
+                                    height: 100%;
+                                }
+                            }
+                        }
+
+                    }
+                    .work-list-box:not(:last-child) {
+                        border-bottom: 1px solid rgba(255, 255, 255, .2);
+                    }
+                    .work-list-box:first-child {
+                        padding-top: 0;
                     }
                 }
             }
