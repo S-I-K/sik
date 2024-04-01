@@ -195,7 +195,7 @@ body::-webkit-scrollbar {
 }
 #wrap section.main-content-wrap section.recent-content-wrap .container .work-list-wrap .work-list-box .work-title-box h2.title {
   font-family: "Poppins", sans-serif;
-  font-size: 58px;
+  font-size: 80px;
   font-weight: 700;
   line-height: 1;
   letter-spacing: -2px;
@@ -229,7 +229,7 @@ body::-webkit-scrollbar {
   line-height: 1.5;
   letter-spacing: -0.8px;
   color: #fff;
-  margin-right: 40px;
+  margin: 0px 40px;
   flex: 1;
   word-break: keep-all;
 }
