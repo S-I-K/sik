@@ -14,6 +14,8 @@ $(()=>{
             scrub: 2,
         }
     });
+
+    
 });
 
 const lenis = new Lenis();
