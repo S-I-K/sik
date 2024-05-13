@@ -15,8 +15,9 @@ header {
     align-items: center;
     justify-content: center;
     .container {
+        width: 100%;
         // border: 1px solid red;
-        padding: 20px 0;
+        padding: 20px 80px;
         display: flex;
         align-items: center;
         justify-content: space-between;

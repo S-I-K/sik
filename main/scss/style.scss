@@ -9,40 +9,72 @@ body::-webkit-scrollbar {
 #wrap {
     width: 100%;
     height: auto;
-    background: rgba(0, 0, 0, .6);
-    padding-top: 780px;
     header {
     }
 
+    /* visual-content-wrap */
     .visual-content-wrap {
-        .video-box {
+        position: relative;
+        overflow: hidden;
+        .video-wrap {
             position: absolute;
-            top: 0;
-            video {
+            width: 100%;
+            height: 100%;
+            .video-box {
+                position: absolute;
+                top: 0;
                 width: 100%;
-                height: 100%;
-                object-fit: cover;
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                video {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
             }
         }
+
         .container {
+            // border: 1px solid red;
             position: relative;
             z-index: 2;
-            border: 1px solid red;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
+            padding-top: 530px;
+            padding-bottom: 140px;
+
             .title-box {
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                justify-content: center;
-                h1 {
+                margin-bottom: 220px;
+                .sub-title-box {
+                    margin-bottom: 140px;
+                    .icon-box {
+                        width: 24px;
+                        height: 24px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-bottom: 40px;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    span.sub-title {
+                        font-family: $font-en;
+                        font-weight: 500;
+                        font-size: 24px;
+                        line-height: 1;
+                        letter-spacing: -.8px;
+                        color: #fff;
+                    }
+                }
+
+                h2.title {
                     display: flex;
                     flex-direction: column;
                     align-items: flex-start;
                     span {
                         font-family: $font-en;
-                        font-weight: 700;
+                        font-weight: 500;
                         font-size: 190px;
                         line-height: 1;
                         letter-spacing: -4px;
@@ -53,31 +85,130 @@ body::-webkit-scrollbar {
 
             .desc-box {
                 display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                span {
-                    font-family: $font-kr;
-                    font-weight: 300;
-                    font-size: 24px;
-                    line-height: 1.5;
-                    letter-spacing: -2px;
-                    color:#fff;
-                }
-                span.bold {
-                    font-weight: 700;
-                    display: inline-block;
-                    margin-bottom: 24px;
+                justify-content: flex-end;
+                .text-box {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: center;
+                    span {
+                        font-family: $font-kr;
+                        font-weight: 300;
+                        font-size: 24px;
+                        line-height: 1.6;
+                        letter-spacing: -1px;
+                        color: #fff;
+                    }
+                    span.bold {
+                        font-weight: 700;
+                        margin-bottom: 24px;
+                    }
+                    .button-box {
+                        margin-top: 34px;
+                        a {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            overflow: hidden;
+                            span.button-effect {
+                                height: 40px;
+                                font-family: $font-en;
+                                font-weight: 500;
+                                font-size: 18px;
+                                line-height: 1;
+                                letter-spacing: -.8px;
+                                color: #fff;
+                            }
+                            .icon-box {
+                                width: 40px;
+                                height: 40px;
+                                padding: 16px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                img {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
                 }
             }
+        }
+    }
 
-            .btn-box {
-                a {
-                    span.button-effect {
-
+    /* recent-content-wrap */
+    .recent-content-wrap {
+        padding-top: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .section-title-box {
+            .container {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                h2.title {
+                    font-family: $font-en;
+                    font-weight: 500;
+                    font-size: 120px;
+                    line-height: 1;
+                    letter-spacing: -6px;
+                    color: $color-black;
+                    text-align: left;
+                    span.circle {
+                        color: $color-main;
                     }
-                    .icon-box {
-                        img {
+                }
+                p.desc {
+                    font-family: $font-kr;
+                    font-weight: 300;
+                    font-size: 18px;
+                    line-height: 1.5;
+                    letter-spacing: -.8px;
+                    color: $color-black;
+                }
+            }
+        }
+        
+        .recent-swiper-box {
+            #recent-swiper {
+                .swiper-wrapper {
+                    .swiper-slide {
+                        width: 708px;
+                        height: auto;
+                        a {
+                            width: 100%;
+                            height: auto;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            .thumb-img-box {
+                                width: 100%;
+                                height: 350px;
+                                background: #d9d9d9;
+                                border-radius: 24px;
+                                img {
 
+                                }
+                            }
+                            .text-box {
+                                width: 100%;
+                                height: 200px;
+                                background: #d9d9d9;
+                                border-radius: 24px;
+                                span {
+
+                                }
+                                p {
+
+                                }
+                            }
+                        }
+                        .button-box {
+                            a {
+
+                            }
                         }
                     }
                 }

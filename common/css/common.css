@@ -37,6 +37,8 @@ section {
 
 .button-effect {
   display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   transition: all 0.4s ease;
 }

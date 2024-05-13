@@ -21,7 +21,7 @@
     <script src="./common/js/jquery-3.7.1.min.js"></script>
     <script src="./common/js/lenis.min.js"></script>
     <script src="./common/js/swiper-bundle.min.js"></script>
-    <script src="./common/js/main.js" defer></script>
+    <script src="./common/js/common.js" defer></script>
     <script src="./main/js/main.js" defer></script>
 </head>
 <body>
@@ -52,39 +52,110 @@
         
         <!-- visual-content-wrap -->
         <section class="visual-content-wrap">
-            <div class="video-box">
-                <video src="./common/img/03.mp4" loop autoplay muted playinline></video>
+            <!--  -->
+            <div class="video-wrap">
+                <div class="video-box">
+                    <video src="./common/img/04.mp4" loop autoplay muted playinline></video>
+                </div>
             </div>
+
+            <!--  -->
             <div class="container">
                 <div class="title-box">
-                    <h1>
-                        <span>
-                            A round
-                        </span>
-                        <span>
-                            round life
-                        </span>
-                    </h1>
-                </div>
-                <div class="desc-box">
-                    <span class="bold">
-                        동그라미를 보면 어떤 생각이 드시나요?
-                    </span>
-                    <span>
-                        저는 각진 곳 하나 없이 동글동글한 동그라미가 부드럽고<br/>
-                        유연하다는 느낌이 드는 것 같습니다<br/>
-                        저는 모든 면에서 동그라미처럼 유연한 사람이 되고자 합니다
-                    </span>
-                </div>
-                <div class="btn--ox">
-                    <a href="#">
-                        <span class="button-effect">
-                            Read More
-                        </span>
+                    <div class="sub-title-box">
                         <div class="icon-box">
-                            <img src="./common/img/icon-arrow-right-whtie.svg" alt="">
+                            <img src="./common/img/icon-sub-title-arrow-white.svg" alt="">
                         </div>
-                    </a>
+                        <span class="sub-title">
+                            Web Designer & Web Publisher
+                        </span>
+                    </div>
+                    <h2 class="title">
+                        <span>
+                            a round.
+                        </span>
+                        <span>
+                            round life.
+                        </span>
+                    </h2>
+                </div>
+
+                <div class="desc-box">
+                    <div class="text-box">
+                        <span class="bold">
+                            동그라미를 보면 어떤 생각이 드시나요?
+                        </span>
+                        <span>
+                            저는 각진 곳 하나 없이 동글동글한 동그라미가 부드럽고,<br/>
+                            유연하다는 느낌이 드는 것 같습니다<br/>
+                            저는 모든 면에서 동그라미처럼 유연한 사람이 되고자 합니다
+                        </span>
+                        <div class="button-box">
+                            <a href="#">
+                                <span class="button-effect">
+                                    Read More
+                                </span>
+                                <div class="icon-box">
+                                    <img src="./common/img/icon-arrow-right-whtie.svg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- recent-content-wrap -->
+        <section class="recent-content-wrap">
+            <!--  -->
+            <div class="section-title-box">
+                <div class="container">
+                    <h2 class="title">
+                        Recent<br/>
+                        Issue<span class="circle">.</span>
+                    </h2>
+                    <p class="desc">
+                        일상적인 모습들을 블로그 포스트를 통해<br/>
+                        만나 보실 수 있습니다.
+                    </p>
+                </div>
+            </div>
+
+            <!--  -->
+            <div class="recent-swiper-box">
+                <div class="swiper mySwiper" id="recent-swiper">
+                    <div class="swiper-wrapper">
+                        <!-- 01 -->
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <div class="thumb-img-box">
+
+                                </div>
+                                <div class="text-box">
+                                    <span>
+
+                                    </span>
+                                    <p>
+
+                                    </p>
+                                </div>
+                                <div class="button-box">
+                                    <a href="#">
+                                        
+                                    </a>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div>
+                        <div class="swiper-slide">Slide 4</div>
+                        <div class="swiper-slide">Slide 5</div>
+                        <div class="swiper-slide">Slide 6</div>
+                        <div class="swiper-slide">Slide 7</div>
+                        <div class="swiper-slide">Slide 8</div>
+                        <div class="swiper-slide">Slide 9</div>
+                    </div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </section>

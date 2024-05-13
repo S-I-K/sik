@@ -2,6 +2,9 @@ $(()=>{
     console.log($);
     console.log('https://www.hewasborn.com/');
 
+    /***********************
+     * GSAP *
+    ***********************/
     $screen = $('.screen-box');
     gsap.to($screen, {
         'opacity': 0.7,
@@ -15,7 +18,31 @@ $(()=>{
         }
     });
 
-    
+    gsap.to($('.video-box'), {
+        duration: 2,
+        y: '0',
+
+        scrollTrigger: {
+            trigger: $('.video-wrap'),
+            start: '0 0',
+            end: '100% 100%',
+            scrub: 2,
+            pin: true,
+        }
+    });
+
+    /***********************
+     * SWIPER *
+    ***********************/
+    var swiper = new Swiper("#recent-swiper", {
+        slidesPerView: 'auto',
+        spaceBetween: 0,
+        centeredSlides: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
 });
 
 const lenis = new Lenis();
