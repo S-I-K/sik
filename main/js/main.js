@@ -36,8 +36,9 @@ $(()=>{
     ***********************/
     var swiper = new Swiper("#recent-swiper", {
         slidesPerView: 'auto',
-        spaceBetween: 0,
+        spaceBetween: 24,
         centeredSlides: true,
+        loop: true,
         pagination: {
             el: ".swiper-pagination",
             clickable: true,

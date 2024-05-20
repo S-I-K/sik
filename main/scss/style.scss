@@ -175,12 +175,13 @@ body::-webkit-scrollbar {
             #recent-swiper {
                 .swiper-wrapper {
                     .swiper-slide {
-                        width: 708px;
+                        width: 580px;
                         height: auto;
                         a {
                             width: 100%;
                             height: auto;
                             display: flex;
+                            flex-direction: column;
                             align-items: center;
                             justify-content: center;
                             .thumb-img-box {
@@ -188,6 +189,7 @@ body::-webkit-scrollbar {
                                 height: 350px;
                                 background: #d9d9d9;
                                 border-radius: 24px;
+                                transition: border-radius .4s ease;
                                 img {
 
                                 }
@@ -197,12 +199,21 @@ body::-webkit-scrollbar {
                                 height: 200px;
                                 background: #d9d9d9;
                                 border-radius: 24px;
+                                transition: border-radius .4s ease;
                                 span {
 
                                 }
                                 p {
 
                                 }
+                            }
+                        }
+                        a:hover {
+                            .thumb-img-box {
+                                border-radius: 62px;
+                            }
+                            .text-box {
+                                border-radius: 62px;
                             }
                         }
                         .button-box {
