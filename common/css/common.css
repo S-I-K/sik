@@ -57,3 +57,33 @@ section {
   transform: translateY(-100%);
   transform-origin: 0% 0%;
 }
+
+/* section-title-box */
+.section-title-box {
+  margin-bottom: 60px;
+}
+.section-title-box .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.section-title-box .container h2.title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 120px;
+  line-height: 1;
+  letter-spacing: -6px;
+  color: #2a2a2a;
+  text-align: left;
+}
+.section-title-box .container h2.title span.circle {
+  color: #fff;
+}
+.section-title-box .container p.desc {
+  font-family: "Pretendard Variable";
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: -0.8px;
+  color: #2a2a2a;
+}

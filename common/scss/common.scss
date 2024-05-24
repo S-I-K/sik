@@ -56,3 +56,33 @@ section {
     transform: translateY(-100%);
     transform-origin: 0% 0%;
 }
+
+/* section-title-box */
+.section-title-box {
+    margin-bottom: 60px;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        h2.title {
+            font-family: $font-en;
+            font-weight: 500;
+            font-size: 120px;
+            line-height: 1;
+            letter-spacing: -6px;
+            color: $color-black;
+            text-align: left;
+            span.circle {
+                color: $color-main;
+            }
+        }
+        p.desc {
+            font-family: $font-kr;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 1.5;
+            letter-spacing: -.8px;
+            color: $color-black;
+        }
+    }
+}
