@@ -222,8 +222,11 @@ body::-webkit-scrollbar {
   font-family: "Pretendard Variable";
   font-weight: 600;
   font-size: 32px;
-  letter-spacing: -1px;
+  line-height: 1.5;
+  letter-spacing: -0.8px;
   color: #2a2a2a;
+  width: calc(100% - 42px - 24px);
+  word-break: keep-all;
 }
 #wrap .recent-content-wrap .recent-swiper-box #recent-swiper .swiper-wrapper .swiper-slide a.content-link-box .title-text-box .icon-box {
   width: 42px;
