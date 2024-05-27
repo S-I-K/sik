@@ -39,10 +39,15 @@ $(()=>{
         spaceBetween: 24,
         centeredSlides: true,
         loop: true,
+        speed: 1200,
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
         },
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+        }
     });
 });
 
