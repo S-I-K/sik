@@ -76,13 +76,15 @@ section {
                 color: $color-main;
             }
         }
-        p.desc {
-            font-family: $font-kr;
-            font-weight: 300;
-            font-size: 18px;
-            line-height: 1.5;
-            letter-spacing: -.8px;
-            color: $color-black;
+        .desc {
+            p {
+                font-family: $font-kr;
+                font-weight: 300;
+                font-size: 18px;
+                line-height: 1.5;
+                letter-spacing: -.8px;
+                color: $color-black;
+            }
         }
     }
 }

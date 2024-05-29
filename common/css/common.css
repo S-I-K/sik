@@ -79,7 +79,7 @@ section {
 .section-title-box .container h2.title span.circle {
   color: #fff;
 }
-.section-title-box .container p.desc {
+.section-title-box .container .desc p {
   font-family: "Pretendard Variable";
   font-weight: 300;
   font-size: 18px;
