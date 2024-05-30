@@ -29,6 +29,18 @@ section {
   justify-content: center;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+  display: flex;
+}
+
+.selecter {
+  display: flex;
+  overflow: hidden;
+  width: inherit;
+  height: inherit;
+}
+
 /* gsap css */
 .gsap-fade-up {
   transform: translateY(44px);

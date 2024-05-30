@@ -51,4 +51,42 @@ $(()=>{
             }
         })
     });
+
+    gsap.fromTo('.gsap-fadeup-01', {
+        y: 20,
+        opacity: 0,
+    },{
+        y: 0,
+        opacity: 1,
+        duration: .4,
+        delay: .8,
+    });
+
+    gsap.fromTo('.gsap-fadeup-02', {
+        y: 20,
+        opacity: 0,
+    },{
+        y: 0,
+        opacity: 1,
+        duration: .4,
+        delay: 1,
+    });
+
+    gsap.fromTo('.gsap-fadeup-03', {
+        y: 20,
+        opacity: 0,
+    },{
+        y: 0,
+        opacity: 1,
+        duration: .4,
+        delay: 1.2,
+    });
+
+    gsap.fromTo('.gsap-opacity-01', {
+        opacity: 0,
+    },{
+        opacity: 1,
+        duration: 1,
+        delay: 1.2,
+    });
 });
