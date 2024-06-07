@@ -36,11 +36,14 @@ header {
                 }
             }
         }
+
         .menu-box {
             display: flex;
             align-items: center;
             justify-content: center;
             overflow: hidden;
+            position: relative;
+            z-index: 999;
             a.menu-btn {
                 width: 40px;
                 height: 40px;
@@ -111,6 +114,69 @@ header {
                 transform: translateY(-100%);
                 transform-origin: 0% 0%;
             }
+        }
+
+        /* nav */
+        nav.nav-menu-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: transparent;
+            visibility: visible;
+            pointer-events: none;
+            opacity: 0;
+            transition: all .6s ease-out;
+            .container {
+                // border: 1px solid red;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0;
+                ul {
+                    li {
+                        a {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            overflow: hidden;
+                            span.hover-text {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                justify-content: center;
+                                font-family: $font-en;
+                                font-weight: 500;
+                                font-size: 74px;
+                                line-height: 1.3;
+                                letter-spacing: -.8px;
+                                position: relative;
+                                color: #fff;
+                                transition: transform 0.2s ease-out;
+                            }
+                            span.hover-text::before {
+                                content: attr(data-hover);
+                                position: absolute;
+                                top: 100%;
+                            }
+                        }
+                    }
+                    li:not(:last-child) {
+                        // margin-bottom: 24px;
+                    }
+                }
+            }
+        }
+        nav.nav-menu-wrap.open {
+            background: rgb(68, 68, 68);
+            visibility: visible;
+            pointer-events: initial;
+            opacity: 1;
+            transition: all .6s ease-out;
         }
     }
 }
