@@ -89,7 +89,8 @@ section {
   text-align: left;
 }
 .section-title-box .container h2.title span.circle {
-  color: #fff;
+  color: #2EAADD;
+  margin-left: 16px;
 }
 .section-title-box .container .desc p {
   font-family: "Pretendard Variable";

@@ -6,6 +6,14 @@ $(()=>{
     });
 
 
+    /* scroll event */
+    $('.back-top-btn.scroll').click(function(e){
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: 0
+        }, 1800,)
+        return false;
+    });
 
 
 
