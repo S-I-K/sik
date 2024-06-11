@@ -15,6 +15,33 @@ $(()=>{
         return false;
     });
 
+    /* header scroll logo change event */
+    $(window).scroll(()=>{
+        console.log(window.scrollY);
+        if(window.scrollY >= 1750 ) {
+            $('header#main-header .logo-box > a > svg path').css({
+                'fill' : '#2a2a2a',
+            });
+            $('header#main-header .menu-box > a > span').css({
+                'color' : '#2a2a2a',
+            });
+            $('header#main-header .burger-wrap a.burger-box span').css({
+                'background' : '#2a2a2a',
+            });
+        }else {
+            $('header#main-header .logo-box > a > svg path').css({
+                'fill' : '#fff',
+            });
+            $('header#main-header .menu-box > a > span').css({
+                'color' : '#fff',
+            });
+            $('header#main-header .burger-wrap a.burger-box span').css({
+                'background' : '#fff',
+            });
+        }
+    })
+
+
 
 
 
