@@ -1,6 +1,6 @@
 $(()=>{
     console.log($);
-    console.log('https://www.hewasborn.com/');
+    // console.log('https://www.hewasborn.com/');
 
     /***********************
      * GSAP *

@@ -72,7 +72,7 @@ body::-webkit-scrollbar {
   margin-bottom: 260px;
 }
 #wrap section.main-content-wrap .intro-text-box .container .title-box h1.title {
-  font-family: "Pretendard Variable";
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 120px;
   line-height: 1;
@@ -92,7 +92,7 @@ body::-webkit-scrollbar {
   max-width: 1000px;
 }
 #wrap section.main-content-wrap .intro-text-box .container .para-box p {
-  font-family: "Pretendard Variable";
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 52px;
   line-height: 1.4;
@@ -110,7 +110,7 @@ body::-webkit-scrollbar {
 }
 #wrap section.main-content-wrap .intro-text-box .container .para-box.right p {
   text-align: right;
-  font-family: "Poppins", sans-serif;
+  font-family: "Pretendard Variable";
   font-weight: 600;
   font-size: 18px;
   letter-spacing: -0.8px;

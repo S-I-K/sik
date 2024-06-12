@@ -164,3 +164,178 @@ header .container nav.nav-menu-wrap.open {
   opacity: 1;
   transition: all 0.6s ease-out;
 }
+header .container .floating-box {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s ease;
+}
+header .container .floating-box a.back-top-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 300px;
+  padding: 14px 14px;
+  opacity: 1;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 99;
+}
+header .container .floating-box a.back-top-btn .img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  background: url("../../common/img/icon-go-to-top.svg") no-repeat center center/cover;
+}
+header .container .floating-box a.back-top-btn span {
+  display: block;
+  width: 0px;
+  height: 18px;
+  overflow: hidden;
+  margin-left: 0px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+  color: #2a2a2a;
+  white-space: nowrap;
+  transition: all 0.4s ease;
+}
+header .container .floating-box a.back-top-btn::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  opacity: 0.2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.4s ease;
+  z-index: -1;
+}
+header .container .floating-box a.back-top-btn:hover {
+  opacity: 1;
+}
+header .container .floating-box a.back-top-btn:hover span {
+  width: 46px;
+  margin-left: 8px;
+}
+header .container .floating-box a.back-top-btn:hover::after {
+  opacity: 1;
+}
+header .container .floating-box.black a.back-top-btn .img-box {
+  background: url("../../common/img/icon-go-to-top-white.svg") no-repeat center center/cover;
+}
+header .container .floating-box.black a.back-top-btn span {
+  color: #fff;
+}
+header .container .floating-box.black a.back-top-btn::after {
+  background: #2a2a2a;
+}
+header .container .sns-floating-box {
+  position: fixed;
+  right: 40px;
+  bottom: 94px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  z-index: 99;
+}
+header .container .sns-floating-box a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 300px;
+  padding: 14px 14px;
+  opacity: 1;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+header .container .sns-floating-box a .img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  background: url("../../common/img/icon-sns-blog.svg") no-repeat center center/cover;
+}
+header .container .sns-floating-box a span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 0px;
+  height: 18px;
+  overflow: hidden;
+  margin-left: 0px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+  color: #2a2a2a;
+  white-space: nowrap;
+  transition: all 0.4s ease;
+}
+header .container .sns-floating-box a::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  opacity: 0.2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.4s ease;
+  z-index: -1;
+}
+header .container .sns-floating-box a:not(:last-child) {
+  margin-bottom: 8px;
+}
+header .container .sns-floating-box a:hover {
+  opacity: 1;
+}
+header .container .sns-floating-box a:hover span {
+  width: 80px;
+  margin-left: 8px;
+}
+header .container .sns-floating-box a:hover::after {
+  opacity: 1;
+}
+header .container .sns-floating-box a.blog .img-box {
+  background: url("../../common/img/icon-sns-blog.svg") no-repeat center center/cover;
+}
+header .container .sns-floating-box a.youtube .img-box {
+  background: url("../../common/img/icon-sns-youtube.svg") no-repeat center center/cover;
+}
+header .container .sns-floating-box a.insta .img-box {
+  background: url("../../common/img/icon-sns-insta.svg") no-repeat center center/cover;
+}
+header .container .sns-floating-box a.github .img-box {
+  background: url("../../common/img/icon-sns-github.svg") no-repeat center center/cover;
+}
+header .container .sns-floating-box.black a span {
+  color: #fff;
+}
+header .container .sns-floating-box.black a::after {
+  background: #2a2a2a;
+}
+header .container .sns-floating-box.black a.blog .img-box {
+  background: url("../../common/img/icon-sns-blog.svg") no-repeat center center/cover;
+}
+header .container .sns-floating-box.black a.youtube .img-box {
+  background: url("../../common/img/icon-sns-youtube.svg") no-repeat center center/cover;
+}
+header .container .sns-floating-box.black a.insta .img-box {
+  background: url("../../common/img/icon-sns-insta.svg") no-repeat center center/cover;
+}

@@ -41,6 +41,10 @@ section {
   height: inherit;
 }
 
+.go-to-top {
+  cursor: pointer;
+}
+
 /* gsap css */
 .gsap-fade-up {
   transform: translateY(44px);

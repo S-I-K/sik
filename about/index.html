@@ -7,8 +7,9 @@
 
     <!-- css -->
     <link rel="stylesheet" href="../common/css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="../common/css/style.css">
+    <link rel="stylesheet" href="../common/css/common.css">
     <link rel="stylesheet" href="../common/css/header.css">
+    <link rel="stylesheet" href="../common/css/footer.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,19 +22,31 @@
     <script src="../common/js/jquery-3.7.1.min.js"></script>
     <script src="../common/js/lenis.min.js"></script>
     <script src="../common/js/swiper-bundle.min.js"></script>
-    <script src="../common/js/main.js" defer></script>
-    <script src="./js/main.js" defer></script>
+    <script src="../common/js/common.js" defer></script>
+    <script src="../main/js/main.js" defer></script>
 </head>
 <body>
     <div id="wrap">
         <!-- header -->
-        <header>
+        <header id="">
             <div class="container">
+                <!-- logo-box -->
                 <div class="logo-box">
-                    <a href="#">
-                        <img src="../common/img/logo-white.svg" alt="">
+                    <a href="https://s-i-k.github.io/sik/">
+                        <svg width="124" height="50" viewBox="0 0 124 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_2488_16)">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M26.2605 50C33.0538 50 39.2446 47.5444 43.9069 43.5146C48.5692 47.5444 54.76 50 61.5532 50C68.3474 50 74.539 47.5437 79.2015 43.5129C83.8641 47.5437 90.0557 50 96.8499 50C111.353 50 123.11 38.8071 123.11 25C123.11 11.1929 111.353 0 96.8499 0C90.0557 0 83.8641 2.45633 79.2015 6.48706C74.539 2.45633 68.3474 0 61.5532 0C54.76 0 48.5692 2.45565 43.9069 6.48538C39.2446 2.45565 33.0538 0 26.2605 0C11.7572 0 0 11.1929 0 25C0 38.8071 11.7572 50 26.2605 50ZM29.899 39.7245C34.0415 38.6146 35.6776 31.288 33.5533 23.3602C31.4291 15.4324 26.3489 9.90545 22.2064 11.0154C18.064 12.1254 16.4279 19.452 18.5521 27.3798C20.6764 35.3076 25.7565 40.8345 29.899 39.7245ZM65.1917 39.7245C69.3342 38.6146 70.9703 31.288 68.8461 23.3602C66.7218 15.4324 61.6416 9.90545 57.4992 11.0154C53.3567 12.1254 51.7206 19.452 53.8448 27.3798C55.9691 35.3076 61.0493 40.8345 65.1917 39.7245ZM104.143 23.3602C106.267 31.288 104.631 38.6146 100.488 39.7245C96.3459 40.8345 91.2657 35.3076 89.1415 27.3798C87.0172 19.452 88.6533 12.1254 92.7958 11.0154C96.9383 9.90545 102.018 15.4324 104.143 23.3602Z" fill="white"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_2488_16">
+                                    <rect width="123.11" height="50" fill=""/>
+                                </clipPath>
+                            </defs>
+                        </svg>
                     </a>
                 </div>
+
+                <!-- menu-box -->
                 <div class="menu-box">
                     <a class="menu-btn button-effect" href="#">
                         <span>
@@ -47,6 +60,93 @@
                         </a>
                     </div>
                 </div>
+
+                <!-- nav.menu-wrap -->
+                <nav class='nav-menu-wrap event'>
+                    <div class="container">
+                        <ul>
+                            <!-- menu01 -->
+                            <li>
+                                <a href="https://s-i-k.github.io/sik/">
+                                    <span class='hover-text'>
+                                        Home
+                                    </span>
+                                </a>
+                            </li>
+                            <!-- menu01 -->
+                            <li>
+                                <a href="https://s-i-k.github.io/sik/about/">
+                                    <span class='hover-text'>
+                                        About
+                                    </span>
+                                </a>
+                            </li>
+                            <!-- menu02 -->
+                            <li>
+                                <a href="https://s-i-k.github.io/sik/work/">
+                                    <span class='hover-text'>
+                                        Works
+                                    </span>
+                                </a>
+                            </li>
+                            <!-- menu03 -->
+                            <li>
+                                <a href="https://s-i-k.github.io/sik/news/">
+                                    <span class='hover-text'>
+                                        News
+                                    </span>
+                                </a>
+                            </li>
+                            <!-- menu04 -->
+                            <li>
+                                <a href="https://s-i-k.github.io/sik/contact">
+                                    <span class='hover-text'>
+                                        Contact
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <!-- floating-box -->
+                <div class="floating-box black">
+                    <a href='#' class="back-top-btn go-to-top">
+                        <div class="img-box">
+                            <!-- <img src="/theme/new_dnc/common/img/back-to-top-arrow.svg" alt=""> -->
+                        </div>
+                        <span>
+                            go top
+                        </span>
+                    </a>
+                </div>
+                <!-- sns-floating-box -->
+                <div class="sns-floating-box black">
+                    <a href='https://blog.naver.com/' target='_blank' class="blog">
+                        <div class="img-box">
+                            <!-- <img src="/theme/new_dnc/common/img/back-to-top-arrow.svg" alt=""> -->
+                        </div>
+                        <span>
+                            blog
+                        </span>
+                    </a>
+                    <a href='https://www.instagram.com/dnccompany/' target="_blank" class="insta">
+                        <div class="img-box">
+                            <!-- <img src="/theme/new_dnc/common/img/back-to-top-arrow.svg" alt=""> -->
+                        </div>
+                        <span>
+                            instagram
+                        </span>
+                    </a>
+                    <a href='https://github.com/S-I-K' target="_blank" class="github">
+                        <div class="img-box">
+                            <!-- <img src="/theme/new_dnc/common/img/back-to-top-arrow.svg" alt=""> -->
+                        </div>
+                        <span>
+                            github
+                        </span>
+                    </a>
+                </div>
             </div>
         </header>
 
@@ -55,7 +155,7 @@
             <!-- video-box -->
             <div class="background-video-box">
                 <div class="video-box">
-                    <video src="./img/about-bg-video.mp4" loop autoplay muted playsinline></video>
+                    <video src="../common/img/04.mp4" loop autoplay muted playsinline></video>
                 </div>
                 <div class="screen-box"></div>
             </div>
@@ -66,7 +166,7 @@
             <section class="intro-text-box">
                 <div class="container">
                     <div class="title-box">
-                        <h1 class="title">HE WAS BORN
+                        <h1 class="title">SIK
                             CREATIVE
                             CONSULTANCY
                         </h1>
