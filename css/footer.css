@@ -1,0 +1,32 @@
+/* variable css */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 130px 0 100px;
+}
+footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .container .copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .container .copyright span {
+  color: #2a2a2a;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: -0.8px;
+  line-height: 1;
+  font-size: 40px;
+  font-weight: 600;
+}
+footer .container .copyright span.copy {
+  font-family: "Pretendard Variable";
+  margin-right: 8px;
+}
+footer .container .copyright span.company {
+  font-family: "Poppins", sans-serif;
+}
