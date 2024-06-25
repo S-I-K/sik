@@ -134,6 +134,9 @@ $(()=>{
                     delay: (index + 1) * .1,
                 });
             })
+
+            $('.menu-btn > span').addClass('white');
+            $('.burger-wrap > .burger-box > span').addClass('white');
         }else{
             setTimeout(()=>{
                 // $('.logo-box > a > img').attr('src', logo_src);
@@ -156,6 +159,9 @@ $(()=>{
                     delay: (index + 1) * .1,
                 });
             })
+
+            $('.menu-btn > span').removeClass('white');
+            $('.burger-wrap > .burger-box > span').removeClass('white');
         }
     });
 

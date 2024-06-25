@@ -63,6 +63,9 @@ header {
                     line-height: 1;
                     transition: all .4s ease;
                 }
+                span.white {
+                    color: #fff !important;
+                }
             }
             a.menu-btn.button-effect::after {
                 color: #fff;
@@ -93,6 +96,9 @@ header {
                         height: 2px;
                         background: #fff;
                         transition: all .4s ease;
+                    }
+                    span.white {
+                        background: #fff !important;
                     }
                     span:nth-child(1) {
                         top: 6px;
