@@ -149,9 +149,6 @@ body::-webkit-scrollbar {
   color: #2a2a2a;
   text-align: left;
 }
-#wrap .recent-content-wrap .section-title-box .container h2.title span.circle {
-  color: #2EAADD;
-}
 #wrap .recent-content-wrap .section-title-box .container .desc {
   display: flex;
   flex-direction: column;
@@ -275,8 +272,8 @@ body::-webkit-scrollbar {
   opacity: 1;
 }
 #wrap .recent-content-wrap .recent-swiper-box #recent-swiper .swiper-wrapper .swiper-slide a.content-link-box:hover .title-text-box .icon-box {
-  background: #2EAADD;
-  border: 1px solid #2EAADD;
+  background: #37b40d;
+  border: 1px solid #37b40d;
 }
 #wrap .recent-content-wrap .recent-swiper-box #recent-swiper .swiper-wrapper .swiper-slide a.content-link-box:hover .title-text-box .icon-box svg {
   fill: #fff;

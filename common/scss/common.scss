@@ -2,7 +2,7 @@
 $font-kr: "Pretendard Variable";
 $font-en: "Poppins", sans-serif;
 $color-black: #2a2a2a;
-$color-main: #2EAADD;
+$color-main: #35e117;
 
 /* commons */
 * {
@@ -71,6 +71,38 @@ section {
 .button-effect:hover {
     transform: translateY(-100%);
     transform-origin: 0% 0%;
+}
+
+.desc {
+    .button-box {
+        margin-top: 40px;
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            span.button-effect {
+                height: 40px;
+                font-family: $font-en;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 1;
+                letter-spacing: -.8px;
+                color: $color-black;
+            }
+            .icon-box {
+                width: 40px;
+                height: 40px;
+                padding: 17px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
 }
 
 /* section-title-box */

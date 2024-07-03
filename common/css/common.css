@@ -74,6 +74,36 @@ section {
   transform-origin: 0% 0%;
 }
 
+.desc .button-box {
+  margin-top: 40px;
+}
+.desc .button-box a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.desc .button-box a span.button-effect {
+  height: 40px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: -0.8px;
+  color: #2a2a2a;
+}
+.desc .button-box a .icon-box {
+  width: 40px;
+  height: 40px;
+  padding: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.desc .button-box a .icon-box img {
+  width: 100%;
+}
+
 /* section-title-box */
 .section-title-box {
   margin-bottom: 60px;
@@ -93,7 +123,7 @@ section {
   text-align: left;
 }
 .section-title-box .container h2.title span.circle {
-  color: #2EAADD;
+  color: #35e117;
   margin-left: 16px;
 }
 .section-title-box .container .desc p {

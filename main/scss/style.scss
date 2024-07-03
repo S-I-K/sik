@@ -2,7 +2,7 @@
 $font-kr: "Pretendard Variable";
 $font-en: "Poppins", sans-serif;
 $color-black: #2a2a2a;
-$color-main: #2EAADD;
+$color-main: #37b40d;
 body::-webkit-scrollbar {
     display: none;
 }
@@ -157,7 +157,6 @@ body::-webkit-scrollbar {
                     color: $color-black;
                     text-align: left;
                     span.circle {
-                        color: $color-main;
                     }
                 }
                 .desc {
