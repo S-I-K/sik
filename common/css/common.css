@@ -123,7 +123,7 @@ section {
   text-align: left;
 }
 .section-title-box .container h2.title span.circle {
-  color: #35e117;
+  color: #01990e;
   margin-left: 16px;
 }
 .section-title-box .container .desc p {
@@ -133,4 +133,11 @@ section {
   line-height: 1.5;
   letter-spacing: -0.8px;
   color: #2a2a2a;
+}
+
+/* responsive: laptop */
+@media (max-width: 1024px) {
+  .container {
+    width: 100%;
+  }
 }

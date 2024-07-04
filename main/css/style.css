@@ -272,8 +272,8 @@ body::-webkit-scrollbar {
   opacity: 1;
 }
 #wrap .recent-content-wrap .recent-swiper-box #recent-swiper .swiper-wrapper .swiper-slide a.content-link-box:hover .title-text-box .icon-box {
-  background: #37b40d;
-  border: 1px solid #37b40d;
+  background: #01990e;
+  border: 1px solid #01990e;
 }
 #wrap .recent-content-wrap .recent-swiper-box #recent-swiper .swiper-wrapper .swiper-slide a.content-link-box:hover .title-text-box .icon-box svg {
   fill: #fff;

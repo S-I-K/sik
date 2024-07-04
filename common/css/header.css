@@ -345,3 +345,5 @@ header .container .sns-floating-box.black a.youtube .img-box {
 header .container .sns-floating-box.black a.insta .img-box {
   background: url("../../common/img/icon-sns-insta.svg") no-repeat center center/cover;
 }
+
+/* responsive: laptop */
