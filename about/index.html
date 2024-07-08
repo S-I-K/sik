@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../common/css/common.css">
     <link rel="stylesheet" href="../common/css/header.css">
     <link rel="stylesheet" href="../common/css/footer.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/about.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -22,6 +22,7 @@
     <script src="../common/js/jquery-3.7.1.min.js"></script>
     <script src="../common/js/lenis.min.js"></script>
     <script src="../common/js/swiper-bundle.min.js"></script>
+    <script src="./js/about.js" defer></script>
     <script src="../common/js/common.js" defer></script>
     <script src="../main/js/main.js" defer></script>
 </head>
@@ -33,13 +34,25 @@
                 <!-- logo-box -->
                 <div class="logo-box">
                     <a href="https://s-i-k.github.io/sik/">
-                        <svg width="124" height="50" viewBox="0 0 124 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- <svg width="124" height="50" viewBox="0 0 124 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_2488_16)">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M26.2605 50C33.0538 50 39.2446 47.5444 43.9069 43.5146C48.5692 47.5444 54.76 50 61.5532 50C68.3474 50 74.539 47.5437 79.2015 43.5129C83.8641 47.5437 90.0557 50 96.8499 50C111.353 50 123.11 38.8071 123.11 25C123.11 11.1929 111.353 0 96.8499 0C90.0557 0 83.8641 2.45633 79.2015 6.48706C74.539 2.45633 68.3474 0 61.5532 0C54.76 0 48.5692 2.45565 43.9069 6.48538C39.2446 2.45565 33.0538 0 26.2605 0C11.7572 0 0 11.1929 0 25C0 38.8071 11.7572 50 26.2605 50ZM29.899 39.7245C34.0415 38.6146 35.6776 31.288 33.5533 23.3602C31.4291 15.4324 26.3489 9.90545 22.2064 11.0154C18.064 12.1254 16.4279 19.452 18.5521 27.3798C20.6764 35.3076 25.7565 40.8345 29.899 39.7245ZM65.1917 39.7245C69.3342 38.6146 70.9703 31.288 68.8461 23.3602C66.7218 15.4324 61.6416 9.90545 57.4992 11.0154C53.3567 12.1254 51.7206 19.452 53.8448 27.3798C55.9691 35.3076 61.0493 40.8345 65.1917 39.7245ZM104.143 23.3602C106.267 31.288 104.631 38.6146 100.488 39.7245C96.3459 40.8345 91.2657 35.3076 89.1415 27.3798C87.0172 19.452 88.6533 12.1254 92.7958 11.0154C96.9383 9.90545 102.018 15.4324 104.143 23.3602Z" fill="white"/>
                             </g>
                             <defs>
                                 <clipPath id="clip0_2488_16">
                                     <rect width="123.11" height="50" fill=""/>
+                                </clipPath>
+                            </defs>
+                        </svg> -->
+                        <svg width="255" height="242" viewBox="0 0 255 242" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_3232_108)">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M127.5 242C197.916 242 255 187.826 255 121C255 54.1735 197.916 0 127.5 0C57.0837 0 0 54.1735 0 121C0 187.826 57.0837 242 127.5 242ZM145.628 190.722C165.775 185.319 173.792 149.933 163.534 111.685C153.275 73.4377 128.627 46.8124 108.48 52.216C88.3326 57.6196 80.3158 93.0057 90.5739 131.253C100.832 169.501 125.48 196.126 145.628 190.722Z" fill="white"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M241 239.2C247.186 239.2 252.2 234.186 252.2 228C252.2 221.814 247.186 216.8 241 216.8C234.814 216.8 229.8 221.814 229.8 228C229.8 234.186 234.814 239.2 241 239.2ZM241 242C248.732 242 255 235.732 255 228C255 220.268 248.732 214 241 214C233.268 214 227 220.268 227 228C227 235.732 233.268 242 241 242Z" fill="white"/>
+                                <path d="M233.945 228.101C233.945 226.742 234.239 225.533 234.827 224.475C235.415 223.403 236.232 222.574 237.277 221.986C238.336 221.385 239.531 221.084 240.864 221.084C242.497 221.084 243.896 221.515 245.059 222.378C246.221 223.24 246.999 224.416 247.391 225.906H243.706C243.432 225.331 243.04 224.893 242.53 224.592C242.034 224.292 241.465 224.142 240.825 224.142C239.793 224.142 238.956 224.501 238.316 225.22C237.676 225.938 237.356 226.899 237.356 228.101C237.356 229.303 237.676 230.263 238.316 230.982C238.956 231.701 239.793 232.06 240.825 232.06C241.465 232.06 242.034 231.91 242.53 231.609C243.04 231.309 243.432 230.871 243.706 230.296H247.391C246.999 231.786 246.221 232.962 245.059 233.824C243.896 234.673 242.497 235.098 240.864 235.098C239.531 235.098 238.336 234.804 237.277 234.216C236.232 233.615 235.415 232.785 234.827 231.727C234.239 230.668 233.945 229.46 233.945 228.101Z" fill="white"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_3232_108">
+                                    <rect width="255" height="242" fill="white"/>
                                 </clipPath>
                             </defs>
                         </svg>
@@ -122,7 +135,7 @@
                 </div>
                 <!-- sns-floating-box -->
                 <div class="sns-floating-box black">
-                    <a href='https://blog.naver.com/' target='_blank' class="blog">
+                    <a href='https://blog.naver.com/daesik99' target='_blank' class="blog">
                         <div class="img-box">
                             <!-- <img src="/theme/new_dnc/common/img/back-to-top-arrow.svg" alt=""> -->
                         </div>
@@ -130,7 +143,7 @@
                             blog
                         </span>
                     </a>
-                    <a href='https://www.instagram.com/dnccompany/' target="_blank" class="insta">
+                    <a href='https://www.instagram.com/99.8.5.22.44/' target="_blank" class="insta">
                         <div class="img-box">
                             <!-- <img src="/theme/new_dnc/common/img/back-to-top-arrow.svg" alt=""> -->
                         </div>

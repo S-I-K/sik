@@ -24,6 +24,8 @@ header .container .logo-box {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  z-index: 999;
 }
 header .container .logo-box a {
   width: auto;
