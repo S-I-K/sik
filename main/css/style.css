@@ -35,6 +35,7 @@ body::-webkit-scrollbar {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  filter: hue-rotate(150deg) brightness(1);
 }
 #wrap section.visual-content-wrap .container {
   position: relative;
