@@ -44,3 +44,115 @@ body::-webkit-scrollbar {
   left: 0;
   z-index: 2;
 }
+#wrap section.about-content-wrap {
+  position: relative;
+  z-index: 2;
+  padding-top: 260px;
+}
+#wrap section.about-content-wrap .container {
+  padding-bottom: 100px;
+  border-bottom: 1px solid #fff;
+}
+#wrap section.about-content-wrap .container .title-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 260px;
+}
+#wrap section.about-content-wrap .container .title-box .sub-title-box {
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  margin-bottom: 140px;
+}
+#wrap section.about-content-wrap .container .title-box .sub-title-box .icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: -48px;
+  bottom: 3px;
+}
+#wrap section.about-content-wrap .container .title-box .sub-title-box .icon-box span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+#wrap section.about-content-wrap .container .title-box .sub-title-box .icon-box span img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#wrap section.about-content-wrap .container .title-box .sub-title-box .sub-title span {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1;
+  color: #fff;
+}
+#wrap section.about-content-wrap .container .title-box h2.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#wrap section.about-content-wrap .container .title-box h2.title span {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 120px;
+  line-height: 1;
+  letter-spacing: -2px;
+  color: #fff;
+}
+#wrap section.about-content-wrap .container .para-area {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#wrap section.about-content-wrap .container .para-area .main-para-box {
+  width: 100%;
+  margin-bottom: 80px;
+}
+#wrap section.about-content-wrap .container .para-area .main-para-box p {
+  width: 100%;
+  font-family: "Pretendard Variable";
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 1.5;
+  letter-spacing: -1px;
+  color: #fff;
+  text-align: left;
+  word-break: keep-all;
+}
+#wrap section.about-content-wrap .container .para-area .main-para-box p:not(:last-child) {
+  margin-bottom: 80px;
+}
+#wrap section.about-content-wrap .container .para-area .sub-para-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+#wrap section.about-content-wrap .container .para-area .sub-para-box p {
+  width: 50%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #fff;
+  text-align: right;
+  word-break: keep-all;
+}
+#wrap section.about-content-wrap .container .para-area .sub-para-box p:not(:last-child) {
+  margin-bottom: 32px;
+}
+#wrap section.about-content-wrap.character {
+  padding-top: 660px;
+}

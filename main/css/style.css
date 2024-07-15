@@ -59,6 +59,9 @@ body::-webkit-scrollbar {
 }
 #wrap section.visual-content-wrap .container .title-box .sub-title-box .icon-box img {
   width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 #wrap section.visual-content-wrap .container .title-box .sub-title-box span.sub-title {
   font-family: "Poppins", sans-serif;
