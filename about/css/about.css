@@ -1,8 +1,4 @@
 /* variable css */
-body::-webkit-scrollbar {
-  display: none;
-}
-
 #wrap {
   width: 100%;
   height: auto;

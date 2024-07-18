@@ -407,6 +407,166 @@ header {
     }
 }
 
+header#black {
+    .container {
+        .logo-box {
+            a {
+                svg {
+                    path {
+                        fill: $color-black;
+                    }
+                }
+            }
+        }
+
+        .menu-box {
+            a.menu-btn {
+                span {
+                    color: $color-black;
+                }
+                span.white {
+                    color: #fff !important;
+                }
+            }
+            a.menu-btn.button-effect::after {
+                color: $color-black;
+            }
+            .burger-wrap {
+                a.burger-box {
+                    span {
+                        background: $color-black;
+                    }
+                    span.white {
+                        background: #fff !important;
+                    }
+                    span:nth-child(1) {
+                    }
+                    span:nth-child(2) {
+                    }
+                }
+                a.burger-box.active {
+                    span {
+                    }
+                    span:nth-child(1) {
+                    }
+                    span:nth-child(2) {
+                    }
+                }
+            }
+        }
+        .menu-box:hover {
+            .button-effect {
+            }
+        }
+
+        /* nav */
+        nav.nav-menu-wrap {
+            .container {
+                ul {
+                    li {
+                        a {
+                            span.hover-text {
+                            }
+                            span.hover-text::before {
+                            }
+                        }
+                    }
+                    li:not(:last-child) {
+                    }
+                }
+            }
+        }
+        nav.nav-menu-wrap.open {
+        }
+
+        .floating-box {
+            a.back-top-btn {
+                .img-box {
+                }
+                span {
+                }
+            }
+            a.back-top-btn::after {
+            }
+            a.back-top-btn:hover {
+                span {
+                }
+            }
+            a.back-top-btn:hover::after {
+            }
+        }
+        .floating-box.black {
+            a.back-top-btn {
+                .img-box {
+                }
+                span {
+                }
+            }
+            a.back-top-btn::after {
+            }
+            a.back-top-btn:hover {
+                span {
+                }
+            }
+        }
+
+        .sns-floating-box {
+            a {
+                .img-box {
+                }
+                span {
+                }
+            }
+            a::after {
+            }
+            a:not(:last-child) {
+            }
+            a:hover {
+                span {
+                }
+            }
+            a:hover::after {
+            }
+            a.blog {
+                .img-box {
+                }
+            }
+            a.youtube {
+                .img-box {
+                }
+            }
+            a.insta {
+                .img-box {
+                }
+            }
+            a.github {
+                .img-box {
+                }
+            }
+        }
+        .sns-floating-box.black {
+            a {
+                span {
+                }
+            }
+            a::after {
+            }
+            a.blog {
+                .img-box {
+                }
+            }
+            a.youtube {
+                .img-box {
+                }
+            }
+            a.insta {
+                .img-box {
+                }
+            }
+        }
+    }
+}
+
 /* responsive: laptop */
 @media ( max-width: 1024px ) {
     

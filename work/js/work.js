@@ -1,0 +1,1 @@
+console.log('"WORK JAVASCRIPT FILE CONNECT"');

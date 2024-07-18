@@ -1,11 +1,8 @@
 /* variable css */
-$font-kr: "Pretendard Variable";
 $font-en: "Poppins", sans-serif;
+$font-kr: "Pretendard Variable";
 $color-black: #2a2a2a;
 $color-main: #01990e;
-body::-webkit-scrollbar {
-    display: none;
-}
 #wrap {
     width: 100%;
     height: auto;
@@ -298,8 +295,8 @@ body::-webkit-scrollbar {
         }
     }
 
-    /* project-content-wrap */
-    section.project-content-wrap {
+    /* work-content-wrap */
+    section.work-content-wrap {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -317,13 +314,13 @@ body::-webkit-scrollbar {
             }
         }
 
-        .project-list-wrap {
+        .work-list-wrap {
             .container {
                 // border: 1px solid red;
                 display: flex;
                 flex-wrap: wrap;
                 align-items: center;
-                a.project-list-box {
+                a.work-list-box {
                     // border: 1px solid red;
                     width: calc(100% / 4 - 30px);
                     height: 380px;
@@ -446,7 +443,7 @@ body::-webkit-scrollbar {
                     }
                 }
 
-                a.project-list-box:hover {
+                a.work-list-box:hover {
                     .thumb-img-box {
                         scale: .9;
                         img {

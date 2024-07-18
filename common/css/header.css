@@ -348,4 +348,25 @@ header .container .sns-floating-box.black a.insta .img-box {
   background: url("../../common/img/icon-sns-insta.svg") no-repeat center center/cover;
 }
 
+header#black .container {
+  /* nav */
+}
+header#black .container .logo-box a svg path {
+  fill: #2a2a2a;
+}
+header#black .container .menu-box a.menu-btn span {
+  color: #2a2a2a;
+}
+header#black .container .menu-box a.menu-btn span.white {
+  color: #fff !important;
+}
+header#black .container .menu-box a.menu-btn.button-effect::after {
+  color: #2a2a2a;
+}
+header#black .container .menu-box .burger-wrap a.burger-box span {
+  background: #2a2a2a;
+}
+header#black .container .menu-box .burger-wrap a.burger-box span.white {
+  background: #fff !important;
+}
 /* responsive: laptop */
