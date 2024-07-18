@@ -163,8 +163,141 @@ body::-webkit-scrollbar {
             }
         }
     }
-    
+
     section.about-content-wrap.character {
         padding-top: 660px;
+    }
+
+    section.about-content-wrap.ability {
+        .container {
+            .title-box {
+                .sub-title-box {
+                    .icon-box {
+                        span {
+                            img {
+                            }
+                        }
+                    }
+                    .sub-title {
+                        span {
+                        }
+                    }
+                }
+                h2.title {
+                    span {
+                    }
+                }
+            }
+
+            .para-area {
+                margin-bottom: 80px;
+                .main-para-box {
+                    p {
+                    }
+                    p:not(:last-child) {
+                    }
+                }
+
+                .sub-para-box {
+                    p {
+                    }
+                    p:not(:last-child) {
+                    }
+                }
+            }
+
+            .skill-list-box {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                flex-wrap: wrap;
+                .skill-box {
+                    width: calc(100% / 4);
+                    padding: 8px 8px;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    section.about-content-wrap.contact {
+        margin-bottom: 100px;
+        .container {
+            padding: 0;
+            border: none;
+            .title-box {
+                .sub-title-box {
+                    .icon-box {
+                        span {
+                            img {
+                            }
+                        }
+                    }
+                    .sub-title {
+                        span {
+                        }
+                    }
+                }
+                h2.title {
+                    span {
+                    }
+                }
+            }
+
+            .para-area {
+                margin-bottom: 80px;
+                .main-para-box {
+                    p {
+                    }
+                    p:not(:last-child) {
+                    }
+                }
+
+                .sub-para-box {
+                    p {
+                    }
+                    p:not(:last-child) {
+                    }
+                }
+            }
+
+            .contact-list-box {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                a.contact-item {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-decoration: underline;
+                    text-decoration-color: #fff;
+                    text-underline-offset: 12px;
+                    text-decoration-thickness: 2px;
+                    opacity: 1;
+                    transition: all .4s ease;
+                    span {
+                        font-family: $font-en;
+                        font-weight: 500;
+                        font-size: 40px;
+                        line-height: 1.5;
+                        letter-spacing: -2px;
+                        color: #fff;
+                    }
+                }
+                a.contact-item:hover {
+                    opacity: .4;
+                    text-decoration-thickness: 1px;
+                }
+            }
+        }
+    }
+
+    footer {
+        position: relative;
+        z-index: 2;
     }
 }

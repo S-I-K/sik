@@ -38,3 +38,13 @@ footer {
         }
     }
 }
+
+footer#white {
+    .container {
+        .copyright {
+            span {
+                color: #fff;
+            }
+        }
+    }
+}

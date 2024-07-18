@@ -30,3 +30,7 @@ footer .container .copyright span.copy {
 footer .container .copyright span.company {
   font-family: "Poppins", sans-serif;
 }
+
+footer#white .container .copyright span {
+  color: #fff;
+}

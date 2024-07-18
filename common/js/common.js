@@ -28,7 +28,7 @@ $(()=>{
 
     /* header scroll logo change event */
     $(window).scroll(()=>{
-        console.log(window.scrollY);
+        // console.log(window.scrollY);
         if(window.scrollY >= 1750 ) {
             $('header#main-header .logo-box > a > svg path').css({
                 'fill' : '#2a2a2a',
