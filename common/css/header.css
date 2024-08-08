@@ -3,7 +3,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: auto;
   z-index: 99;
   display: flex;
@@ -370,3 +370,8 @@ header#black .container .menu-box .burger-wrap a.burger-box span.white {
   background: #fff !important;
 }
 /* responsive: laptop */
+@media (max-width: 1024px) {
+  header .container {
+    padding: 20px 40px;
+  }
+}

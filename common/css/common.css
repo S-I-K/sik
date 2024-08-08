@@ -20,6 +20,10 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+#wrap {
+  position: relative;
+}
+
 .container {
   width: 1440px;
   height: auto;
@@ -124,6 +128,10 @@ section.content-wrap {
 /* section-title-box */
 .section-title-box {
   margin-bottom: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .section-title-box .container {
   display: flex;
@@ -157,5 +165,11 @@ section.content-wrap {
 @media (max-width: 1024px) {
   .container {
     width: 100%;
+    padding: 0 40px;
+  }
+  /* section-title-box */
+  .section-title-box .container h2.title {
+    font-size: 80px;
+    letter-spacing: -2px;
   }
 }
