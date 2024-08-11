@@ -375,3 +375,16 @@ header#black .container .menu-box .burger-wrap a.burger-box span.white {
     padding: 20px 40px;
   }
 }
+/* responsive: mobile */
+@media (max-width: 450px) {
+  header .container {
+    padding: 20px 20px;
+    /* nav */
+  }
+  header .container .logo-box {
+    height: 32px;
+  }
+  header .container .menu-box a.menu-btn {
+    display: none;
+  }
+}

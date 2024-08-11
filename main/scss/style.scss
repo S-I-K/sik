@@ -770,3 +770,66 @@ $color-main: #01990e;
         }
     }
 }
+
+@media ( max-width: 450px ) {
+    #wrap {
+        /* visual-content-wrap */
+        section.visual-content-wrap {
+            .video-wrap {
+                .video-box {
+                    video {
+                    }
+                }
+            }
+
+            .container {
+                padding-top: 60vh;
+                .title-box {
+                    margin-bottom: 120px;
+                    .sub-title-box {
+                        margin-bottom: 42px;
+                        .icon-box {
+                            width: 18px;
+                            height: 18px;
+                            img {
+                            }
+                        }
+                        span.sub-title {
+                            font-size: 18px;
+                        }
+                    }
+
+                    h2.title {
+                        span {
+                            font-size: 64px;
+                        }
+                    }
+                }
+
+                .desc-box {
+                    justify-content: flex-start;
+                    .text-box {
+                        span {
+                            font-size: 14px;
+                            letter-spacing: -.8px;
+                        }
+                        span.bold {
+                        }
+                        .button-box {
+                            a {
+                                span.button-effect {
+                                    font-size: 14px;
+                                }
+                                .icon-box {
+                                    padding: 17px;
+                                    img {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
