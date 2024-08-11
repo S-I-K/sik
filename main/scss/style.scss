@@ -667,6 +667,7 @@ $color-main: #01990e;
 
         /* work-content-wrap */
         section.work-content-wrap {
+            padding-top: 100px;
             .section-title-box {
                 .container {
                     h2.title {
@@ -748,6 +749,7 @@ $color-main: #01990e;
 
         /* contact-content-wrap */
         section.contact-content-wrap {
+            padding-top: 100px;
             .contact-content-area {
                 .container {
                     .contact-list-box {
@@ -810,7 +812,7 @@ $color-main: #01990e;
                     justify-content: flex-start;
                     .text-box {
                         span {
-                            font-size: 14px;
+                            font-size: 16px;
                             letter-spacing: -.8px;
                         }
                         span.bold {
@@ -818,7 +820,7 @@ $color-main: #01990e;
                         .button-box {
                             a {
                                 span.button-effect {
-                                    font-size: 14px;
+                                    font-size: 16px;
                                 }
                                 .icon-box {
                                     padding: 17px;
@@ -826,6 +828,218 @@ $color-main: #01990e;
                                     }
                                 }
                             }
+                        }
+                    }
+                }
+            }
+        }
+
+        /* recent-content-wrap */
+        section.recent-content-wrap {
+            .section-title-box {
+                .container {
+                    h2.title {
+                        span.circle {
+                        }
+                    }
+                    .desc {
+                        p {
+                        }
+                    }
+                }
+            }
+            
+            .recent-swiper-box {
+                // padding: 0 20px;
+                #recent-swiper {
+                    .swiper-wrapper {
+                        .swiper-slide {
+                            width: 100%;
+                            padding: 0 20px;
+                            a.content-link-box {
+                                .thumb-img-box {
+                                    height: 250px;
+                                    img {
+                                    }
+                                }
+                                .thumb-img-box::after {
+                                }
+
+                                .category-text-box {
+                                    span {
+                                        font-size: 14px;
+                                    }
+                                }
+
+                                .title-text-box {
+                                    h2.title {
+                                        font-size: 22px;
+                                        font-weight: 500;
+                                        width: calc(100% - 32px - 24px);
+                                    }
+                                    .icon-box {
+                                        width: 32px;
+                                        height: 32px;
+                                        svg {
+                                            width: 12px;
+                                        }
+                                    }
+                                    .icon-box::after {
+                                        width: 12px;
+                                    }
+                                }
+                            }
+                            a.content-link-box:hover {
+                                .thumb-img-box {
+                                    border-radius: 6px;
+                                    img {
+                                    }
+                                }
+                                .thumb-img-box::after {
+                                }
+
+                                .category-text-box {
+                                    span {
+                                    }
+                                }
+
+                                .title-text-box {
+                                    h2.title {
+                                    }
+                                    .icon-box {
+                                        svg {
+                                        }
+                                    }
+                                    .icon-box::after {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        /* work-content-wrap */
+        section.work-content-wrap {
+            .section-title-box {
+                .container {
+                    h2.title {
+                        .circle {
+
+                        }
+                    }
+                    p.desc {
+                        
+                    }
+                }
+            }
+
+            .work-list-wrap {
+                .container {
+                    a.work-list-box {
+                        width: 100%;
+                        height: 240px;
+                        margin: 0;
+                        .thumb-img-box {
+                            img {
+                            }
+                        }
+                        .thumb-img-box::after {
+                        }
+                        > .title-box {
+                            padding: 20px 20px;
+                            span {
+                            }
+                        }
+                        .hover-title-box {
+                            padding: 30px 40px;
+                            .icon-box {
+                                width: 14px;
+                                height: 14px;
+                                img {
+                                }
+                            }
+                            .title-box {
+                                span {
+                                    font-size: 14px;
+                                    font-weight: 300;
+                                }
+                            }
+                            .desc-box {
+                                span {
+                                    font-size: 24px;
+                                    line-height: 1.2;
+                                    font-weight: 300;
+                                }
+                                span:nth-child(1) {
+                                }
+                                span:nth-child(2) {
+                                }
+                                span:nth-child(3) {
+                                }
+                            }
+                        }
+                    }
+
+                    a.work-list-box:hover {
+                        .thumb-img-box {
+                            img {
+                            }
+                        }
+                        .thumb-img-box::after {
+                        }
+                        > .title-box {
+                            span {
+                            }
+                        }
+                        .hover-title-box {
+                            .icon-box {
+                                img {
+                                }
+                            }
+                            .title-box {
+                                span {
+                                }
+                            }
+                            .desc-box {
+                                span {
+                                }
+                            }
+                        }
+                    }
+                    
+                    a.work-list-box:not(:last-child) {
+                        margin: 0 0 40px 0;
+                    }
+                }
+            }
+        }
+
+        /* contact-content-wrap */
+        section.contact-content-wrap {
+            .contact-content-area {
+                .container {
+                    .contact-list-box {
+                        flex-direction: column;
+                        padding: 48px 24px;
+                        .contact-text-box {
+                            width: 100%;
+                            a {
+                            }
+                            span {
+                                letter-spacing: 0px;
+                            }
+                            span.category {
+                                font-size: 14px;
+                                margin-bottom: 18px;
+                            }
+                            span.name {
+                                font-size: 24px;
+                            }
+                        }
+                        .contact-text-box:not(:last-child) {
+                            margin-bottom: 40px;
                         }
                     }
                 }

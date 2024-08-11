@@ -634,6 +634,7 @@ header#black {
                         li {
                             a {
                                 span.hover-text {
+                                    font-size: 48px;
                                 }
                                 span.hover-text::before {
                                 }
@@ -648,6 +649,8 @@ header#black {
             }
     
             .floating-box {
+                right: 20px;
+                bottom: 20px;
                 a.back-top-btn {
                     .img-box {
                     }
@@ -679,6 +682,8 @@ header#black {
             }
     
             .sns-floating-box {
+                right: 20px;
+                bottom: 74px;
                 a {
                     .img-box {
                     }

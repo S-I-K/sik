@@ -173,3 +173,29 @@ section.content-wrap {
     letter-spacing: -2px;
   }
 }
+/* responsive: mobile */
+@media (max-width: 450px) {
+  .container {
+    padding: 0px 20px;
+  }
+  /* section-title-box */
+  .section-title-box .container {
+    flex-direction: column;
+  }
+  .section-title-box .container h2.title {
+    width: 100%;
+    font-size: 56px;
+    letter-spacing: -1px;
+    margin-bottom: 32px;
+  }
+  .section-title-box .container .desc {
+    width: 100%;
+  }
+  .section-title-box .container .desc p {
+    font-size: 16px;
+  }
+  .desc .button-box {
+    justify-content: flex-start;
+    margin-top: 8px;
+  }
+}

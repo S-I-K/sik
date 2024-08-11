@@ -493,8 +493,14 @@
   #wrap section.recent-content-wrap .recent-swiper-box #recent-swiper .swiper-wrapper .swiper-slide a.content-link-box .title-text-box h2.title {
     font-size: 24px;
   }
+  #wrap section.work-content-wrap {
+    padding-top: 100px;
+  }
   #wrap section.work-content-wrap .work-list-wrap .container a.work-list-box {
     width: calc(33.3333333333% - 30px);
+  }
+  #wrap section.contact-content-wrap {
+    padding-top: 100px;
   }
   #wrap section.contact-content-wrap .contact-content-area .container .contact-list-box .contact-text-box {
     padding: 0;
@@ -509,6 +515,9 @@
 @media (max-width: 450px) {
   #wrap {
     /* visual-content-wrap */
+    /* recent-content-wrap */
+    /* work-content-wrap */
+    /* contact-content-wrap */
   }
   #wrap section.visual-content-wrap .container {
     padding-top: 60vh;
@@ -533,13 +542,88 @@
     justify-content: flex-start;
   }
   #wrap section.visual-content-wrap .container .desc-box .text-box span {
-    font-size: 14px;
+    font-size: 16px;
     letter-spacing: -0.8px;
   }
   #wrap section.visual-content-wrap .container .desc-box .text-box .button-box a span.button-effect {
-    font-size: 14px;
+    font-size: 16px;
   }
   #wrap section.visual-content-wrap .container .desc-box .text-box .button-box a .icon-box {
     padding: 17px;
+  }
+  #wrap section.recent-content-wrap .recent-swiper-box #recent-swiper .swiper-wrapper .swiper-slide {
+    width: 100%;
+    padding: 0 20px;
+  }
+  #wrap section.recent-content-wrap .recent-swiper-box #recent-swiper .swiper-wrapper .swiper-slide a.content-link-box .thumb-img-box {
+    height: 250px;
+  }
+  #wrap section.recent-content-wrap .recent-swiper-box #recent-swiper .swiper-wrapper .swiper-slide a.content-link-box .category-text-box span {
+    font-size: 14px;
+  }
+  #wrap section.recent-content-wrap .recent-swiper-box #recent-swiper .swiper-wrapper .swiper-slide a.content-link-box .title-text-box h2.title {
+    font-size: 22px;
+    font-weight: 500;
+    width: calc(100% - 32px - 24px);
+  }
+  #wrap section.recent-content-wrap .recent-swiper-box #recent-swiper .swiper-wrapper .swiper-slide a.content-link-box .title-text-box .icon-box {
+    width: 32px;
+    height: 32px;
+  }
+  #wrap section.recent-content-wrap .recent-swiper-box #recent-swiper .swiper-wrapper .swiper-slide a.content-link-box .title-text-box .icon-box svg {
+    width: 12px;
+  }
+  #wrap section.recent-content-wrap .recent-swiper-box #recent-swiper .swiper-wrapper .swiper-slide a.content-link-box .title-text-box .icon-box::after {
+    width: 12px;
+  }
+  #wrap section.recent-content-wrap .recent-swiper-box #recent-swiper .swiper-wrapper .swiper-slide a.content-link-box:hover .thumb-img-box {
+    border-radius: 6px;
+  }
+  #wrap section.work-content-wrap .work-list-wrap .container a.work-list-box {
+    width: 100%;
+    height: 240px;
+    margin: 0;
+  }
+  #wrap section.work-content-wrap .work-list-wrap .container a.work-list-box > .title-box {
+    padding: 20px 20px;
+  }
+  #wrap section.work-content-wrap .work-list-wrap .container a.work-list-box .hover-title-box {
+    padding: 30px 40px;
+  }
+  #wrap section.work-content-wrap .work-list-wrap .container a.work-list-box .hover-title-box .icon-box {
+    width: 14px;
+    height: 14px;
+  }
+  #wrap section.work-content-wrap .work-list-wrap .container a.work-list-box .hover-title-box .title-box span {
+    font-size: 14px;
+    font-weight: 300;
+  }
+  #wrap section.work-content-wrap .work-list-wrap .container a.work-list-box .hover-title-box .desc-box span {
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 300;
+  }
+  #wrap section.work-content-wrap .work-list-wrap .container a.work-list-box:not(:last-child) {
+    margin: 0 0 40px 0;
+  }
+  #wrap section.contact-content-wrap .contact-content-area .container .contact-list-box {
+    flex-direction: column;
+    padding: 48px 24px;
+  }
+  #wrap section.contact-content-wrap .contact-content-area .container .contact-list-box .contact-text-box {
+    width: 100%;
+  }
+  #wrap section.contact-content-wrap .contact-content-area .container .contact-list-box .contact-text-box span {
+    letter-spacing: 0px;
+  }
+  #wrap section.contact-content-wrap .contact-content-area .container .contact-list-box .contact-text-box span.category {
+    font-size: 14px;
+    margin-bottom: 18px;
+  }
+  #wrap section.contact-content-wrap .contact-content-area .container .contact-list-box .contact-text-box span.name {
+    font-size: 24px;
+  }
+  #wrap section.contact-content-wrap .contact-content-area .container .contact-list-box .contact-text-box:not(:last-child) {
+    margin-bottom: 40px;
   }
 }

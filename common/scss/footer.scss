@@ -48,3 +48,22 @@ footer#white {
         }
     }
 }
+
+
+/* responsive: mobile */
+@media ( max-width: 450px ) {
+    footer {
+        padding: 80px 0 60px 0;
+        .container {
+            .copyright {
+                span {
+                    font-size: 28px;
+                }
+                span.copy {
+                }
+                span.company {
+                }
+            }
+        }
+    }
+}

@@ -387,4 +387,15 @@ header#black .container .menu-box .burger-wrap a.burger-box span.white {
   header .container .menu-box a.menu-btn {
     display: none;
   }
+  header .container nav.nav-menu-wrap .container ul li a span.hover-text {
+    font-size: 48px;
+  }
+  header .container .floating-box {
+    right: 20px;
+    bottom: 20px;
+  }
+  header .container .sns-floating-box {
+    right: 20px;
+    bottom: 74px;
+  }
 }

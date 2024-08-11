@@ -34,3 +34,13 @@ footer .container .copyright span.company {
 footer#white .container .copyright span {
   color: #fff;
 }
+
+/* responsive: mobile */
+@media (max-width: 450px) {
+  footer {
+    padding: 80px 0 60px 0;
+  }
+  footer .container .copyright span {
+    font-size: 28px;
+  }
+}
