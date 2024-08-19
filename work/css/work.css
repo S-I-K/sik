@@ -6,7 +6,6 @@
 #wrap section.work-content-wrap {
   position: relative;
   z-index: 2;
-  padding-top: 310px;
 }
 #wrap section.work-content-wrap .container > .title-box {
   width: 100%;
@@ -14,22 +13,22 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 260px;
+  margin-bottom: 180px;
 }
 #wrap section.work-content-wrap .container > .title-box .sub-title-box {
   display: flex;
   align-items: flex-end;
   position: relative;
-  margin-bottom: 140px;
+  margin-bottom: 120px;
 }
 #wrap section.work-content-wrap .container > .title-box .sub-title-box .icon-box {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 24px;
-  height: 24px;
+  width: 18px;
+  height: 18px;
   position: absolute;
-  left: -48px;
+  left: -32px;
   bottom: 3px;
 }
 #wrap section.work-content-wrap .container > .title-box .sub-title-box .icon-box span {
@@ -47,7 +46,7 @@
 }
 #wrap section.work-content-wrap .container > .title-box .sub-title-box .sub-title span {
   font-family: "Poppins", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 24px;
   line-height: 1;
   color: #2a2a2a;
@@ -60,7 +59,7 @@
 }
 #wrap section.work-content-wrap .container > .title-box h2.title span {
   font-family: "Poppins", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 120px;
   line-height: 1;
   letter-spacing: -2px;
@@ -72,9 +71,9 @@
   align-items: center;
 }
 #wrap section.work-content-wrap .container .work-list-wrap .container a.work-list-box {
-  width: calc(33.3333333333% - 24px);
+  width: calc(33.3333333333% - 30px);
   height: 534px;
-  margin: 12px 12px 12px 12px;
+  margin: 30px 15px 30px 15px;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -217,4 +216,69 @@
 #wrap section.work-content-wrap .container .work-list-wrap .container a.work-list-box:hover .hover-title-box .desc-box span {
   opacity: 1;
   transform: translate(0px, 0px);
+}
+#wrap section.work-content-wrap.web {
+  padding-top: 240px;
+  margin-bottom: 260px;
+}
+
+@media (max-width: 1024px) {
+  #wrap section.work-content-wrap .container .work-list-wrap .container {
+    padding: 0;
+  }
+  #wrap section.work-content-wrap .container .work-list-wrap .container a.work-list-box {
+    height: 380px;
+  }
+}
+@media (max-width: 450px) {
+  #wrap section.work-content-wrap .container > .title-box {
+    margin-bottom: 120px;
+  }
+  #wrap section.work-content-wrap .container > .title-box .sub-title-box {
+    margin-bottom: 42px;
+  }
+  #wrap section.work-content-wrap .container > .title-box .sub-title-box .icon-box {
+    width: 14px;
+    height: 14px;
+    left: -28px;
+  }
+  #wrap section.work-content-wrap .container > .title-box .sub-title-box .sub-title span {
+    font-size: 18px;
+  }
+  #wrap section.work-content-wrap .container > .title-box h2.title span {
+    font-size: 64px;
+  }
+  #wrap section.work-content-wrap .container .work-list-wrap .container {
+    flex-direction: column;
+  }
+  #wrap section.work-content-wrap .container .work-list-wrap .container a.work-list-box {
+    width: 100%;
+    height: 240px;
+    margin: 0;
+  }
+  #wrap section.work-content-wrap .container .work-list-wrap .container a.work-list-box > .title-box {
+    padding: 20px 20px;
+  }
+  #wrap section.work-content-wrap .container .work-list-wrap .container a.work-list-box .hover-title-box {
+    padding: 30px 40px;
+  }
+  #wrap section.work-content-wrap .container .work-list-wrap .container a.work-list-box .hover-title-box .icon-box {
+    width: 14px;
+    height: 14px;
+  }
+  #wrap section.work-content-wrap .container .work-list-wrap .container a.work-list-box .hover-title-box .title-box span {
+    font-size: 14px;
+    font-weight: 300;
+  }
+  #wrap section.work-content-wrap .container .work-list-wrap .container a.work-list-box .hover-title-box .desc-box span {
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 300;
+  }
+  #wrap section.work-content-wrap .container .work-list-wrap .container a.work-list-box:not(:last-child) {
+    margin: 0 0 40px 0;
+  }
+  #wrap section.work-content-wrap.web {
+    padding-top: 160px;
+  }
 }

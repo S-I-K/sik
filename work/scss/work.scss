@@ -13,7 +13,6 @@ $color-main: #01990e;
     section.work-content-wrap {
         position: relative;
         z-index: 2;
-        padding-top: 310px;
         .container {
             > .title-box {
                 width: 100%;
@@ -21,20 +20,20 @@ $color-main: #01990e;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                margin-bottom: 260px;
+                margin-bottom: 180px;
                 .sub-title-box {
                     display: flex;
                     align-items: flex-end;
                     position: relative;
-                    margin-bottom: 140px;
+                    margin-bottom: 120px;
                     .icon-box {
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                        width: 24px;
-                        height: 24px;
+                        width: 18px;
+                        height: 18px;
                         position: absolute;
-                        left: -48px;
+                        left: -32px;
                         bottom: 3px;
                         span {
                             display: flex;
@@ -52,7 +51,7 @@ $color-main: #01990e;
                     .sub-title {
                         span {
                             font-family: $font-en;
-                            font-weight: 500;
+                            font-weight: 400;
                             font-size: 24px;
                             line-height: 1;
                             color: $color-black;
@@ -66,7 +65,7 @@ $color-main: #01990e;
                     justify-content: center;
                     span {
                         font-family: $font-en;
-                        font-weight: 500;
+                        font-weight: 400;
                         font-size: 120px;
                         line-height: 1;
                         letter-spacing: -2px;
@@ -83,9 +82,9 @@ $color-main: #01990e;
                     align-items: center;
                     a.work-list-box {
                         // border: 1px solid red;
-                        width: calc(100% / 3 - 24px);
+                        width: calc(100% / 3 - 30px);
                         height: 534px;
-                        margin: 12px 12px 12px 12px;
+                        margin: 30px 15px 30px 15px;
                         overflow: hidden;
                         display: flex;
                         align-items: center;
@@ -243,6 +242,221 @@ $color-main: #01990e;
                     }
                 }
             }
+        }
+    }
+    
+    section.work-content-wrap.web {
+        padding-top: 240px;
+        margin-bottom: 260px;
+    }
+}
+
+@media ( max-width: 1024px ) {
+    #wrap {
+        section.work-content-wrap {
+            .container {
+                > .title-box {
+                    .sub-title-box {
+                        .icon-box {
+                            span {
+                                img {
+                                }
+                            }
+                        }
+                        .sub-title {
+                            span {
+                            }
+                        }
+                    }
+                    h2.title {
+                        span {
+                        }
+                    }
+                }
+    
+                .work-list-wrap {
+                    .container {
+                        padding: 0;
+                        a.work-list-box {
+                            height: 380px;
+                            .thumb-img-box {
+                                img {
+                                }
+                            }
+                            .thumb-img-box::after {
+                            }
+                            > .title-box {
+                                span {
+                                }
+                            }
+                            .hover-title-box {
+                                .icon-box {
+                                    img {
+                                    }
+                                }
+                                .title-box {
+                                    span {
+                                    }
+                                }
+                                .desc-box {
+                                    span {
+                                    }
+                                    span:nth-child(1) {
+                                    }
+                                    span:nth-child(2) {
+                                    }
+                                    span:nth-child(3) {
+                                    }
+                                }
+                            }
+                        }
+    
+                        a.work-list-box:hover {
+                            .thumb-img-box {
+                                img {
+                                }
+                            }
+                            .thumb-img-box::after {
+                            }
+                            > .title-box {
+                                span {
+                                }
+                            }
+                            .hover-title-box {
+                                .icon-box {
+                                    img {
+                                    }
+                                }
+                                .title-box {
+                                    span {
+                                    }
+                                }
+                                .desc-box {
+                                    span {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media ( max-width: 450px ) {
+    #wrap {
+        section.work-content-wrap {
+            .container {
+                > .title-box {
+                    margin-bottom: 120px;
+                    .sub-title-box {
+                        margin-bottom: 42px;
+                        .icon-box {
+                            width: 14px;
+                            height: 14px;
+                            left: -28px;
+                            span {
+                                img {
+                                }
+                            }
+                        }
+                        .sub-title {
+                            span {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                    h2.title {
+                        span {
+                            font-size: 64px;
+                        }
+                    }
+                }
+    
+                .work-list-wrap {
+                    .container {
+                        flex-direction: column;
+                        a.work-list-box {
+                            width: 100%;
+                            height: 240px;
+                            margin: 0;
+                            .thumb-img-box {
+                                img {
+                                }
+                            }
+                            .thumb-img-box::after {
+                            }
+                            > .title-box {
+                                padding: 20px 20px;
+                                span {
+                                }
+                            }
+                            .hover-title-box {
+                                padding: 30px 40px;
+                                .icon-box {
+                                    width: 14px;
+                                    height: 14px;
+                                    img {
+                                    }
+                                }
+                                .title-box {
+                                    span {
+                                        font-size: 14px;
+                                        font-weight: 300;
+                                    }
+                                }
+                                .desc-box {
+                                    span {
+                                        font-size: 24px;
+                                        line-height: 1.2;
+                                        font-weight: 300;
+                                    }
+                                    span:nth-child(1) {
+                                    }
+                                    span:nth-child(2) {
+                                    }
+                                    span:nth-child(3) {
+                                    }
+                                }
+                            }
+                        }
+    
+                        a.work-list-box:hover {
+                            .thumb-img-box {
+                                img {
+                                }
+                            }
+                            .thumb-img-box::after {
+                            }
+                            > .title-box {
+                                span {
+                                }
+                            }
+                            .hover-title-box {
+                                .icon-box {
+                                    img {
+                                    }
+                                }
+                                .title-box {
+                                    span {
+                                    }
+                                }
+                                .desc-box {
+                                    span {
+                                    }
+                                }
+                            }
+                        }
+
+                        a.work-list-box:not(:last-child) {
+                            margin: 0 0 40px 0;
+                        }
+                    }
+                }
+            }
+        }
+        section.work-content-wrap.web {
+            padding-top: 160px;
         }
     }
 }
