@@ -2,6 +2,7 @@ $(()=>{
     console.log($);
     // console.log('https://www.hewasborn.com/');
 
+    /* 소개 페이지 딤드 */
     $screen = $('.screen-box');
     gsap.to($screen, {
         'opacity': 0.7,
@@ -13,27 +14,6 @@ $(()=>{
             end: '1920px 100%',
             scrub: 2,
         }
-    });
-
-
-
-    gsap.registerPlugin(ScrollTrigger);
-    $fade_up = gsap.utils.toArray('.gsap-fade-up');
-    $fade_up.forEach(el => {
-        gsap.to(el, {
-            'transform': 'translateY(0px)',
-            'opacity': 1,
-            'duration': 2,
-            'ease': 'ease',
-            scrollTrigger: {
-                markers: false,
-                trigger: el,
-                start: '-20% 100%',
-                end: 'top 70%',
-                scrub: 2,
-                // toggleClass: 'active',
-            }
-        })
     });
 });
 

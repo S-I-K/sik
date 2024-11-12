@@ -1,23 +1,12 @@
 $(()=>{
-    console.log($);
     // console.log('https://www.hewasborn.com/');
 
-    /***********************
-     * GSAP *
-    ***********************/
-    $screen = $('.screen-box');
-    gsap.to($screen, {
-        'opacity': 0.7,
 
-        scrollTrigger: {
-            trigger: $('#wrap'),
-            // markers: true,
-            start: '960px 100%',
-            end: '1920px 100%',
-            scrub: 2,
-        }
-    });
 
+    /* =======================
+        GSAP
+    ======================= */
+    /* 메인페이지 영상 패럴럭스 */
     gsap.to($('.video-box'), {
         duration: 2,
         y: '0',
@@ -31,9 +20,13 @@ $(()=>{
         }
     });
 
-    /***********************
-     * SWIPER *
-    ***********************/
+
+
+
+    /* =======================
+        SWIPER
+    ======================= */
+    /* 블로그 포스팅 스와이퍼 */
     var swiper = new Swiper("#recent-swiper", {
         slidesPerView: 'auto',
         spaceBetween: 24,
@@ -49,8 +42,17 @@ $(()=>{
             disableOnInteraction: false,
         }
     });
+
+
+    /* 블로그 포스팅 수정 될 때까지만 잠시 링크 기능 막아둠. */
+    $('#recent-swiper .swiper-slide > a').click(function(e) {
+        e.preventDefault();
+    });
 });
 
+
+
+/* 스크롤 부드럽게 */
 const lenis = new Lenis();
 lenis.on('scroll', (e) => {
     // console.log(e);
