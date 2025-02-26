@@ -110,7 +110,7 @@ section.content-wrap {
   font-weight: 400;
   font-size: 14px;
   line-height: 1;
-  letter-spacing: -0.8px;
+  letter-spacing: -0.4px;
   color: #2a2a2a;
 }
 .desc .button-box a .icon-box {
@@ -154,10 +154,10 @@ section.content-wrap {
 }
 .section-title-box .container .desc p {
   font-family: "Pretendard Variable";
-  font-weight: 300;
+  font-weight: 400;
   font-size: 18px;
   line-height: 1.5;
-  letter-spacing: -0.8px;
+  letter-spacing: -0.4px;
   color: #2a2a2a;
 }
 

@@ -101,7 +101,7 @@
 }
 #wrap section.about-content-wrap .container .title-box h2.title span {
   font-family: "Poppins", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 120px;
   line-height: 1;
   letter-spacing: -2px;
@@ -120,9 +120,9 @@
   width: 100%;
   font-family: "Pretendard Variable";
   font-weight: 300;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 1.5;
-  letter-spacing: -1px;
+  letter-spacing: -0.4px;
   color: #fff;
   text-align: left;
   word-break: keep-all;

@@ -45,9 +45,9 @@ $(()=>{
 
 
     /* 블로그 포스팅 수정 될 때까지만 잠시 링크 기능 막아둠. */
-    $('#recent-swiper .swiper-slide > a').click(function(e) {
+    /* $('#recent-swiper .swiper-slide > a').click(function(e) {
         e.preventDefault();
-    });
+    }); */
 });
 
 

@@ -93,7 +93,7 @@
 #wrap section.visual-content-wrap .container .desc-box .text-box span {
   font-family: "Pretendard Variable";
   font-weight: 300;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1.6;
   letter-spacing: -1px;
   color: #fff;
@@ -115,9 +115,9 @@
   height: 40px;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1;
-  letter-spacing: -0.8px;
+  letter-spacing: -0.4px;
   color: #fff;
 }
 #wrap section.visual-content-wrap .container .desc-box .text-box .button-box a .icon-box {
